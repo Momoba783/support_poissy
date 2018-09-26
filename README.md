@@ -1,52 +1,111 @@
 INTRODUCTION
 
-Qu’est ce que la veille numérique ?
-	Il s'agit de l'observation de l'environnement technologique, technique et économique de l'entreprise. 
-	Cette approche globale doit aider au développement de l'entreprise.
-	Elle permet aussi une meilleure réactivité de l'entreprise face à un danger ou un changement.
+Quâ€™est ce que la veille numÃ©rique ?
+	Il s'agit de l'observation de l'environnement technologique, technique et Ã©conomique de l'entreprise. 
+	Cette approche globale doit aider au dÃ©veloppement de l'entreprise.
+	Elle permet aussi une meilleure rÃ©activitÃ© de l'entreprise face Ã  un danger ou un changement.
 	La multiplication des outils rend cette veille plus accessible aux entreprises de taille plus modeste. 
 
-La veille technologique, ou veille numérique
-	La veille technologique peut être l'un des aspects de la veille stratégique. 
-	Mais selon l'activité de l'entreprise ou du professionnel, on peut également parler de veille numérique. 
-	Elle se concentre dans ce cas sur les nouvelles méthodes ou les nouvelles solutions développées dans un cadre professionnel précis.
-	Pour un professionnel, cela signifie donc une écoute constante des nouvelles normes, des nouvelles pratiques ou des nouveaux outils. 
+La veille technologique, ou veille numÃ©rique
+	La veille technologique peut Ãªtre l'un des aspects de la veille stratÃ©gique. 
+	Mais selon l'activitÃ© de l'entreprise ou du professionnel, on peut Ã©galement parler de veille numÃ©rique. 
+	Elle se concentre dans ce cas sur les nouvelles mÃ©thodes ou les nouvelles solutions dÃ©veloppÃ©es dans un cadre professionnel prÃ©cis.
+	Pour un professionnel, cela signifie donc une Ã©coute constante des nouvelles normes, des nouvelles pratiques ou des nouveaux outils. 
 
- Adapter ses outils à ses objectifs
-	Avec le Web 2.0, de nouveaux outils et de nouvelles pratiques ont émergé. 
-	La veille est désormais proactive. Elle est aussi facilitée par des outils dédiés. 
+ Adapter ses outils Ã  ses objectifs
+	Avec le Web 2.0, de nouveaux outils et de nouvelles pratiques ont Ã©mergÃ©. 
+	La veille est dÃ©sormais proactive. Elle est aussi facilitÃ©e par des outils dÃ©diÃ©s. 
 	Certains outils sont payants, d'autres gratuits.
-	Quelques exemples d'outils gratuits qui peuvent aider à organiser sa veille. 
+	Quelques exemples d'outils gratuits qui peuvent aider Ã  organiser sa veille. 
 
-Quels sont les langages de programmation les plus utilisés par les développeurs ?
-	Ben Frederickson, un développeur et blogueur, s'est amusé à dresser un classement de la popularité des langages de programmation 
-	en comptant tout simplement le nombre de personnes qui les utilisaient sur les plateformes d'hébergement de code, et en particulier GitHub. 
-	Pour cela, il a utilisé les projets GitHub Archive et GHTorrent comme sources de données pour son analyse.
-	L'archive GitHub fournit un enregistrement de tous les événements publics sur GitHub depuis le début de l'année 2011. 
-	Elle crée un événement chaque fois que quelqu'un a créé un nouveau code, un fork ou un référentiel, ou a ouvert un ticket sur la plateforme. 
-	Tout le projet GitHub Archive a plus de 1,25 milliard d'événements sur plus de 75 millions de dépôts différents. 
-	Avec GHTorrent, il a pu aller plus loin pour déterminer les langages de la plupart des dépôts.
-	Un autre élément qui lui permettra d'affiner son analyse est qu'il y a des noms d'utilisateur associés à chacun de ces événements, ce qui signifie 
-	qu'il est possible de compter le nombre de personnes différentes utilisant chacun des langages. 
-	Pour ce faire, chaque fois qu'un utilisateur interagit avec un référentiel, Ben Frederickson compte cet utilisateur comme utilisant le langage de 
-	ce référentiel, puis il fait les cumuls pour chaque mois afin de calculer le nombre mensuel d'utilisateurs actifs (MAU) de chaque langage.
-	Puisque les données remontent jusqu'à sept ans en arrière, le développeur a pu également montrer l'évolution de chaque langage de programmation 
-	au fil du temps, et déceler certaines tendances intéressantes. Il a pu ainsi faire un classement sur la popularité des langages, mais aussi 
-	déterminer les langages de programmation qu'il vaudrait la peine d'apprendre et ceux qu'il faudrait peut-être éviter. Cela dit, que nous révèle son analyse ? 
-	C'est ce que nous allons découvrir dans la suite.
+Quels sont les langages de programmation les plus utilisÃ©s par les dÃ©veloppeurs ?
+	Ben Frederickson, un dÃ©veloppeur et blogueur, s'est amusÃ© Ã  dresser un classement de la popularitÃ© des langages de programmation 
+	en comptant tout simplement le nombre de personnes qui les utilisaient sur les plateformes d'hÃ©bergement de code, et en particulier GitHub. 
+	Pour cela, il a utilisÃ© les projets GitHub Archive et GHTorrent comme sources de donnÃ©es pour son analyse.
+	L'archive GitHub fournit un enregistrement de tous les Ã©vÃ©nements publics sur GitHub depuis le dÃ©but de l'annÃ©e 2011. 
+	Elle crÃ©e un Ã©vÃ©nement chaque fois que quelqu'un a crÃ©Ã© un nouveau code, un fork ou un rÃ©fÃ©rentiel, ou a ouvert un ticket sur la plateforme. 
+	Tout le projet GitHub Archive a plus de 1,25 milliard d'Ã©vÃ©nements sur plus de 75 millions de dÃ©pÃ´ts diffÃ©rents. 
+	Avec GHTorrent, il a pu aller plus loin pour dÃ©terminer les langages de la plupart des dÃ©pÃ´ts.
+	Un autre Ã©lÃ©ment qui lui permettra d'affiner son analyse est qu'il y a des noms d'utilisateur associÃ©s Ã  chacun de ces Ã©vÃ©nements, ce qui signifie 
+	qu'il est possible de compter le nombre de personnes diffÃ©rentes utilisant chacun des langages. 
+	Pour ce faire, chaque fois qu'un utilisateur interagit avec un rÃ©fÃ©rentiel, Ben Frederickson compte cet utilisateur comme utilisant le langage de 
+	ce rÃ©fÃ©rentiel, puis il fait les cumuls pour chaque mois afin de calculer le nombre mensuel d'utilisateurs actifs (MAU) de chaque langage.
+	Puisque les donnÃ©es remontent jusqu'Ã  sept ans en arriÃ¨re, le dÃ©veloppeur a pu Ã©galement montrer l'Ã©volution de chaque langage de programmation 
+	au fil du temps, et dÃ©celer certaines tendances intÃ©ressantes. Il a pu ainsi faire un classement sur la popularitÃ© des langages, mais aussi 
+	dÃ©terminer les langages de programmation qu'il vaudrait la peine d'apprendre et ceux qu'il faudrait peut-Ãªtre Ã©viter. Cela dit, que nous rÃ©vÃ¨le son analyse ? 
+	C'est ce que nous allons dÃ©couvrir dans la suite.
 
-Classement des langages en fonction de leur base d’utilisateurs mensuels actifs
-	JavaScript enregistre sur toute la période le plus grand nombre d'utilisateurs mensuels actifs, avec une bonne longueur d'avance sur les autres. Ce n'est toutefois pas 
-	une surprise, car comme le souligne Ben Frederickson, c'est le langage que tous les programmeurs ont dû ou devront utiliser à un moment donné. On voit également que 
-	Python a progressivement gagné du terrain et finit par dépasser Java pour devenir le deuxième langage le plus populaire sur GitHub. Pour 
-	en arriver là, Python a probablement bénéficié de l'intérêt croissant pour le machine learning, où il est désormais l'un des langages les plus prisés. 
-	On voit également que C++ est monté en popularité au détriment de C. Cela a du sens, d'après Ben Frederickson, dans la mesure où même des projets comme GCC ont été 
-	convertis de C en C ++ pour avoir accès à certaines fonctionnalités en C ++. 
+Classement des langages en fonction de leur base dâ€™utilisateurs mensuels actifs
+	JavaScript enregistre sur toute la pÃ©riode le plus grand nombre d'utilisateurs mensuels actifs, avec une bonne longueur d'avance sur les autres. Ce n'est toutefois pas 
+	une surprise, car comme le souligne Ben Frederickson, c'est le langage que tous les programmeurs ont dÃ» ou devront utiliser Ã  un moment donnÃ©. On voit Ã©galement que 
+	Python a progressivement gagnÃ© du terrain et finit par dÃ©passer Java pour devenir le deuxiÃ¨me langage le plus populaire sur GitHub. Pour 
+	en arriver lÃ , Python a probablement bÃ©nÃ©ficiÃ© de l'intÃ©rÃªt croissant pour le machine learning, oÃ¹ il est dÃ©sormais l'un des langages les plus prisÃ©s. 
+	On voit Ã©galement que C++ est montÃ© en popularitÃ© au dÃ©triment de C. Cela a du sens, d'aprÃ¨s Ben Frederickson, dans la mesure oÃ¹ mÃªme des projets comme GCC ont Ã©tÃ© 
+	convertis de C en C ++ pour avoir accÃ¨s Ã  certaines fonctionnalitÃ©s en C ++. 
 
-Langages à apprendre en 2018
+Langages Ã  apprendre en 2018
 	Il s'agit des langages avec les bases d'utilisateurs ayant les plus fortes croissances, en ce qui concerne le pourcentage 
-	de développeurs qui les utilisent sur GitHub. Cela concerne donc en général les jeunes langages qui semblent avoir la cote auprès des développeurs. En tête du classement 
-	se trouve le langage Go développé par Google, suivi de TypeScript, le surensemble typé de JavaScript qui est développé par Microsoft.
+	de dÃ©veloppeurs qui les utilisent sur GitHub. Cela concerne donc en gÃ©nÃ©ral les jeunes langages qui semblent avoir la cote auprÃ¨s des dÃ©veloppeurs. En tÃªte du classement 
+	se trouve le langage Go dÃ©veloppÃ© par Google, suivi de TypeScript, le surensemble typÃ© de JavaScript qui est dÃ©veloppÃ© par Microsoft.
+	
+# MarkDown
+
+<a name="top>
+
+[Atteindre les Ancres](#ancres)
+
+Langage qui permet de mettre en forme du texte sur le web : caractÃ¨re gras, italique, liste, tableau, insertion d'images, de liens, etc.
+
+il se prÃ©sente comme du texte classique avec des caractÃ¨res spÃ©ciaux (non_alphabÃ©tiques) tel que # ou * par exemple.
+
+UtilisÃ© sur Github, le markdown avec une prÃ©visualisation en direct du rÃ©sultat.
+
+# `#` titre de niveau 1 Ã©quivalent <h1></h1>
+## `##` titre de niveau 2 
+### `###` titre de niveau 3  
+#### `####` titre de niveau 4
+##### `#####` titre de niveau 5
+###### `######` titre de niveau 6
+
+Pour que les balises ne soient pas interprÃ©tÃ©es je les entoure de deux guillemets inversÃ©s touches : alt gr + 7 ``
+
+On Ã©crit en itlaique avec deux **astÃ©risques** ou des _underscore_
+
+    Pour avoir un effet encadrÃ© avec un background gris clair, mettre 4 espaces ou tab.
+Le texte barrÃ© utilise deux ~~tildes~~ alt gr + 2
+
+# Les listes
+
+1. premier objet dans une liste ordonnÃ©e.
+2. second objet dans une liste ordonnÃ©e.
+* puce de liste non ordonnÃ©e.
+
+18. les nombres sont sans importance, il suffit qu'il y ait un nombre et Github l'affiche Ã  la suite des premiers objets de la liste
+
+Je saute une ligne aprÃ¨s ma liste et 3 espaces en dÃ©but de ligne => mon paragraphe est indentÃ© (decalÃ© Ã  droite) au mÃªme niveau que ma liste.
+
+   Pour avoir un retour Ã  la ligne dans le mÃªme paragraphe je termine ma ligne avec deux espaces.
+
+   * une liste non ordonnÃ©e utilise les astÃ©risques,  
+   - le signe moins  
+   + et le signe plus.
+
+# les liens 
+
+* [Lien de type inline](http://www.google.com)
+
+* [Accueil de Google](http://www.google.com)
+
+* [Lien de renvoi sur un fichier](https://github.com/Momoba783/support_poissy/blob/master/README.md)
+
+# Les ancres
+
+<a name="ancres">
+
+[Retour en haut](#top)
+
+# Les images
+![Lizard image](https://media.giphy.com/media/9MFsKQ8A6HCN2/giphy.gif)
 
 
 	
