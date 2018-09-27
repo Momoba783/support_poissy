@@ -16,3 +16,9 @@ body {
 .back {
     background-color:  rgb(150, 150, 150); 
 } 
+
+.exo {
+    background-color: green;
+    padding : 5px;
+    color: #fff;
+}
