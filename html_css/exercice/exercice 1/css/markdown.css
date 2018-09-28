@@ -10,15 +10,24 @@ body {
 }
 
  hr{
-     border: 2px solid  rgb(150, 150, 150);    
+     border: 1px solid  rgb(150, 150, 150);    
  }
 
 .back {
-    background-color:  rgb(150, 150, 150); 
+    background-color:  rgb(150, 150, 150);
+    padding: 7px; 
 } 
 
 .exo {
     background-color: green;
     padding : 5px;
     color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: disc;
 }
