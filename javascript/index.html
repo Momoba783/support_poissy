@@ -214,11 +214,13 @@
 //EXO 1//
             var nom ="Ba";
             var prénom ="Mohamed"
-            alert("Bonjour, je m'appelle Mohamed Ba");
+            alert("Bonjour, je m'appelle" + nom + " " + prénom);
 
 
 //EXO 2//
-            var nom_prénom = prompt("Veuillez indiquer votre nom et prénom");
+            var nom, prénom = prompt("Veuillez indiquer votre nom");
+            var prénom = prompt("Veuillez indiquer votre prénom");
+            alert("Bonjour, je m'appelle" + nom + " " + prénom);
             
         
 
@@ -226,28 +228,64 @@
 //EXO 3//
             var x = 1;
             var y = 5;
-            var addition = x + y;
-            alert("La somme de x et de y est 6");
+            var somme = x + y;
+            alert("La somme de " + x + " " + y + " " + " est " + somme);
 
 
 //EXO 4//
 
-            var x = prompt("Quelle est la valeur numérique de x ?");
-            var y = prompt("Quelle est la valeur numérique de y ?");
+            var x = Number(prompt("Quelle est la valeur numérique de x ?"));
+            var y = Number(prompt("Quelle est la valeur numérique de y ?")),
+            resultat = x + y;
+            alert (resultat);
 
 
 
 //EXO 5//
 
-            
-            
+            var différence = x - y;
+            var somme = x + y;
+            var produit = x * y;
+            var quotient = x / y;
+            alert ("La somme" + " " + x + " et de " + y + " " + " est " + somme + 
+            "\nLa différence" + " " + x + " et de " + y + " " + " est " + différence + 
+            "\nLe produit" + " " + x + " et de " + y + " " + " est " + produit + 
+            "\nLe quotient" + " " + x + " et de " + y + " " + " est " + quotient);
 
             
-
-
+            
 
 
 //EXO 6//
+            var nombre1 = Number(prompt("entrez une note")),
+            var nombre2 = Number(prompt("entrez une note")),
+            var nombre3 = Number(prompt("entrez une note")),
+            moyenne = (nombre1 + nombre2 +nombre3)/3;
+            alert(moyenne);
+
+
+
+//EXO 7//
+            var mois = Number(prompt("Entrez un mois en chiffre"));
+            var année = Number(prompt ("Entrez l'année"));
+            switch(mois) {
+                case 1: case 3: case 5: case 7: case 8: case 10: case 12: j = 31; break;
+                case 4: case 6: case 9: case 11: j=30; break;
+                case 2: if(année%4==0){
+                    j=29;
+                } else {
+                    j=28;
+                }
+                break;
+            }
+            alert(" Le mois de " + mois + " à " + j);
+
+
+
+//EXO 8//
+            
+            var n = Number(prompt("saisir un entier"));
+
 
 
 
