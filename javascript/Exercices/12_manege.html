@@ -23,10 +23,81 @@
 
 	<script>
 
-var manege = Number(prompt("Entrez le nombre de tours souhaités"));
-for(i = 1; i <= manege; i++){
-    alert("C'est le tour de manège n°"+i);
-}	
+	// 	        var manege=Number(prompt("Indiquer le nombre de tours"))
+    // switch(manege){
+    //     case 1:
+    //     alert("C'est le tour de manège n°1") 
+    //     break;
+    //     case 2:
+    //     alert("C'est le tour de manège n°2") 
+    //     break;
+    //     case 3:
+    //     alert("C'est le tour de manège n°3") 
+    //     break;
+    //     case 4:
+    //     alert("C'est le tour de manège n°4") 
+    //     break;
+    //     case 5:
+    //     alert("C'est le tour de manège n°5") 
+    //     break;
+    //     case 6:
+    //     alert("C'est le tour de manège n°6") 
+    //     break;
+    //     case 7:
+    //     alert("C'est le tour de manège n°7") 
+    //     break;
+    //     case 8:
+    //     alert("C'est le tour de manège n°8") 
+    //     break;
+    //     case 9:
+    //     alert("C'est le tour de manège n°9") 
+    //     break;
+    //     case 10:
+    //     alert("C'est le tour de manège n°10") 
+    //     break;
+    //     default:
+    //     alert("Error!!!");
+    // }
+
+// var manege = Number(prompt("Entrez le nombre de tours souhaités"));
+// for(i = 1; i <= manege; i++){
+//     alert("C'est le tour de manège n°"+i);
+// }	
+
+
+
+/* 1-- boucle WHILE */
+var manege = 0;
+while (manege < 10) {
+   manege++;
+   document.write("c'est le tour n°" + manege + "<br />");
+}
+
+/* 1-- boucle FOR */
+document.write("<hr />");
+
+for (var i = 1; i <= 10 ; i++) {
+   document.write("c'est le tour n°" + i + "<br />");
+}
+
+document.write("<hr />");
+document.write("<hr />");
+
+/* 2-- boucle WHILE */ //La fonction parseInt() analyse une chaîne de caractère fournie en argument et renvoie un entier exprimé dans une base donnée.
+var question = parseInt(prompt("Combien de tours voulez-vous ?"));
+var compteur = 1;
+while (compteur <= question) {
+   document.write("c'est le tour n°" + compteur + "<br />");
+   compteur++;
+}
+document.write("<hr />");
+
+/* 2-- boucle FOR */
+var nbTours = parseInt(prompt("Combien de tours à faire ?"));
+for (var tour = 1; tour <= nbTours; tour++) {
+   document.write("c'est le tour n°" + tour + "<br />");
+}
+
 	</script>
 
 <script type="text/javascript" src="12.js" ></script>

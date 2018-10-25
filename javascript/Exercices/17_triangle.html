@@ -13,10 +13,26 @@
 	<img src="17-1.png" alt="">
 
 	<script>
-var x = "";
-for(t = 1; t <= 7; t++){
-    x+= '#';
-    console.log(x);
+
+//FOR
+console.log("FOR");
+var diese = "";
+
+for(var i = 1; i < 8; i++){
+	diese += "#";
+	console.log(diese);
+}
+
+//WHILE
+console.log("WHILE");
+var ligne = "";
+var i = 1;
+while (i <= 7){
+	ligne = ligne + "#";
+	//autre possibilité avec l'opérateur +=
+	//ligne += "#";
+	console.log(ligne);
+	i++;
 }
 	</script>
 <script type="text/javascript" src="17.js" ></script>
