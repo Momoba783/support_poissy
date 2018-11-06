@@ -15,11 +15,15 @@ header{
 
 .text{
     float:left;
-    color:#fff;
     width: 400px;
     height:20px;
     background-color: rgb(51, 51, 51);
     text-align: center;
+}
+
+.text a{
+    color:#fff;
+    text-decoration: none;
 }
 
 #logo{
@@ -64,6 +68,7 @@ hr{
     border-color: rgb(223, 221, 221);
 }
 
+
 .imgtxt2{
     margin-left:50px;
     margin-right: 50px;
@@ -71,24 +76,36 @@ hr{
 
 nav{
     border-top:1px solid lightgrey;
-    border-bottom:1px solid lightgrey;
-    height:20px;
+    height:22px;
+    border-bottom: 3px solid rgb(206, 207, 208);
+    background: linear-gradient(to top, rgb(197, 197, 197),rgb(236, 237, 238));
 }
 
-nav ul{
-    text-align:center;
-}
 
 nav ul li {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 30px;
+    border-right: 1px solid rgba(138, 138, 138, 0.529);
+    padding-right: 15px;
+    height: 22px;
+    padding-top: 2px;
+    
 }
 
 nav ul li a {
     text-decoration: none;
     color:#000;
     font-size: 0.9em;
+    
+   
 }
+
+.rbouton{
+    float: right;
+    margin-right: 80px;
+ }
+
+
 
 #wrapper{
     background-color: #fff;
@@ -105,6 +122,7 @@ nav ul li a {
 .petite1, .petite2{
     float:left;
     margin-left: 20px;
+   
 }
 
 .petite2{
@@ -113,8 +131,12 @@ nav ul li a {
 
 
 .rose {
-    background-color: rgb(245, 0, 151);
+    background-color: #f52674;
     text-align: center;
+    height: 30px;
+    margin-top: -13px;
+   
+
 }
 
 .rose a{
@@ -123,8 +145,37 @@ nav ul li a {
     text-decoration: none;
 }
 
+.littlegray{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float:left;
+    width:25%;
+}
+
+.littlegraylast{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top:20px;
+    float:left;
+    width:25%;
+}
+
+.image-float{
+    float:left;
+}
+
+.txt-float{
+    margin-top:13px;
+    margin-left:4px;
+    color: #afafaf;
+    float:left;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+
 .produit{
-    border: 1px solid lightgrey;
+    border: 1px solid #afafaf;
     width:280px;
     float:left;
     margin-left:40px;
@@ -135,7 +186,7 @@ nav ul li a {
 .image{
     width:280px;
     height:200px;
-    background-color: grey;
+    background-color: #afafaf;
 }
 
 h4{
@@ -146,7 +197,7 @@ h4{
 }
 
 h5{
-    color: rgb(245, 0, 151);
+    color: #f52674;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -155,20 +206,48 @@ h5{
 
 .minigris{
     background-color: rgb(51, 51, 51);
-    color:#fff;
     float: left;
     width: 50%;
     font-size: 0.8em;
     height: 20px;
 }
 
-.minirose{
-    background-color:  rgb(245, 0, 151);
+.minigris i{
+    float:left;
+    margin-top:3px;
+    margin-left: 10px;
     color:#fff;
+}
+
+.minigris p{
+    float:left;
+    text-align: center;
+    margin-left:10px;
+    margin-top:3px;
+    color:#fff;
+}
+
+.minirose{
+    background-color:  #f52674;
     float: left;
     width: 50%;
     font-size: 0.8em;
     height: 20px;
+}
+
+.minirose i{
+    float:left;
+    margin-top:3px;
+    margin-left: 10px;
+    color:#fff;
+}
+
+.minirose p{
+    float:left;
+    text-align: center;
+    margin-left:10px;
+    margin-top:3px;
+    color:#fff;
 }
 
 .minigray{
@@ -177,9 +256,140 @@ h5{
     width:100%;
     height:20px;
     font-size: 0.8em;
+}
+
+.minigray i{
+    float:left;
+    margin-top:5px;
+    margin-left:30px;
     color:#fff;
+}
+
+.minigray p{
+    float:left;
+    text-align: center;
+    margin-left:10px;
+    margin-top:3px;
+    color:#fff;
+}
+
+h3{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.rectangle{
+    background-color: #f52674;
+    width:100px;
+    height:20px;
 }
 
 .eshop{
     background-color: rgb(51, 51, 51);
+    padding-top:70px;
+    padding-bottom:10px;
+    color:#fff;
+}
+
+.eshop p{
+    font-size: 0.9em;
+}
+
+.eshop a{
+    color: #f52674;
+    text-decoration: none;
+}
+
+.lien {
+    text-align: center;
+    margin-top:50px;
+}
+
+.tiers{
+    float:left;
+    width:30%;
+    margin-left:20px;
+    border-right:0.5px solid #fff;
+}
+
+.tiersdroite{
+    float:left;
+    width:30%;
+    margin-left:20px;
+}
+
+.icones{
+    float:left;
+    margin-right: 20px;
+    height:160px;
+}
+
+.adresse {
+    width: 38px;
+    height: 38px;
+    background: url(../IMG/sprites.png) no-repeat;
+    background-position-y: -102px
+}
+
+.telephone{
+    margin-top:35px;
+    width: 38px;
+    height: 38px;
+    background: url(../IMG/sprites.png) no-repeat;
+    background-position-y: -137px
+}
+
+.email{
+    margin-top:20px;
+    width: 38px;
+    height: 38px;
+    background: url(../IMG/sprites.png) no-repeat;
+}
+
+.horaires{
+    width: 38px;
+    height: 38px;
+    background: url(../IMG/sprites.png) no-repeat;
+    background-position-y: -33px
+}
+
+.qui{
+    width: 38px;
+    height: 38px;
+    background: url(../IMG/sprites.png) no-repeat;
+    background-position-y: -67px
+}
+
+footer{
+    background-color:#f8f8f8;
+    padding:50px;
+    margin-top:30px;
+}
+
+footer a{
+    display: block;
+    text-decoration: none;
+    color:#000;
+}
+
+h6{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.blocB{
+    float:left;
+    width:300px;
+    margin-right: 10px;
+}
+
+.grand-demi {
+    float:left;
+}
+
+.petit-demi {
+    float:left;
 }
