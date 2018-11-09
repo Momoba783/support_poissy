@@ -105,9 +105,10 @@ nav ul li a {
    
 }
 
-.rbouton{
+nav form{
     float: right;
     margin-right: 80px;
+    transform:translate(0, -20px);
  }
 
 
@@ -127,23 +128,46 @@ nav ul li a {
 
 .txtopacity{
     background-color: rgba(75, 75, 75, 0.5);
-    height:60px;
+    height:40px;
     width:100%;
     position:absolute;
     bottom:0;
     left:0;
     z-index: 1;
-    padding:20px 10px;
+    padding-left:10px;
+    padding-top:10px;
 }
 
 .txtopacity p{
     color:#fff;
 }
 
+#carouselExampleIndicators ol{
+    padding-left:430px;
+}
+
+#carouselExampleIndicators ol li{
+    height:20px;
+    width:20px;
+    padding:13px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    opacity:1;
+}
+
 .carousel-control-prev-icon, .carousel-control-next-icon{
     background-color: #f52674;
     width:30px;
     height:30px;
+}
+
+.carousel-control-prev-icon{
+    transform:translate(-34px, 0);
+}
+
+.carousel-control-next-icon{
+    transform:translate(37px, 0);
 }
 
 .petite1, .petite2{
@@ -415,7 +439,7 @@ h3{
     width: 0; 
     height: 0; 
     border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
+    border-bottom: 9px solid transparent;
     position: absolute;
     top:0;
     right:-15px;
@@ -510,7 +534,7 @@ footer{
     background-color:#f8f8f8;
     padding:50px;
     margin-top:30px;
-    height:1000px;
+    
 }
 
 footer a{
