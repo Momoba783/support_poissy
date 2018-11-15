@@ -1,0 +1,72 @@
+.abs{
+    color: crimson;
+    position: absolute; /* La class a une position absolue par rapport au bodu dans lequel i est et en fonction du navigateur.
+    Au contraire une position relative qui va etre en fonction du conteneur dans lequel il est */
+    bottom:0;
+    right: 0;
+    font-weight: bold;}
+ /* }/ *Les p avec la class orange autont un style différent des autres*/
+
+ .yellow{
+    width:960px;/*valeur habituelle pour les sites car facilement divisible pour organiser les blocs*/
+    background: #f4c400;
+    margin: 0 auto;
+    padding:30px;
+    box-sizing: border-box;
+ }
+
+ .a, 
+ .b{
+     height: 150px;
+     width:450px;
+     border:2px solid #000;
+     display:inline-block;
+     vertical-align: middle;
+ }
+
+ nav {
+     position:fixed;
+     background-color: rgb(245, 169, 169);
+     height:30px;
+     width:100%;
+     text-align: center;
+     color:rgb(233, 61, 61);
+     top:0;
+     left:0;
+ }
+
+ .bla{
+     border:1px solid rgb(0, 65, 170);
+     margin:40px 0 0 0;
+ }
+
+ .violet, .orange{
+     width:200px;
+     height:200px;
+     margin-right:5px;
+     margin-bottom: 5px;
+     float:left;
+     text-align: center;
+ }
+
+ .violet{
+    background-color: violet;
+ }
+
+ .orange{
+    background-color: orange;
+}
+
+.clear{
+    clear: both;
+}
+
+.fix{
+    width:1000px;
+    border: 2px solid red;
+}
+
+.vari{
+    width:100%;
+    border: 2px solid blue;
+}

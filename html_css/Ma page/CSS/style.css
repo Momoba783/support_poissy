@@ -1,0 +1,28 @@
+body{
+    background-image: url(../img/mf.JPG);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-attachment: fixed;
+}
+
+#conteneur{
+    width:70%;
+    margin:auto;
+    background-color: black;
+}
+
+.haut{
+    height:30px;
+    background-color: brown;
+}
+
+.haut a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.haut li {
+    display:inline-block;
+    padding:20px;
+    float:right;
+}
