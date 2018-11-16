@@ -1,0 +1,44 @@
+body{
+    background-image: url(img/mf.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+nav{
+    width:100%;
+    height:40px;
+    background-color: brown;
+}
+
+
+nav ul li{
+    display: inline-block;
+    
+}
+
+nav a{
+    text-decoration: none;
+    list-style: none;
+    color:#fff;
+}
+
+.menu{
+    background-color:violet;
+    width:50px;
+    height:200px;;
+    border-radius: 20px;
+}
+
+.menu ul li:first-child{
+    background-color: crimson;
+}
+
+.menu ul li{
+    border-bottom:1px solid #000;
+}
+
+.menu a{
+    text-decoration: none;
+    list-style: none;
+    color:#000;
+}

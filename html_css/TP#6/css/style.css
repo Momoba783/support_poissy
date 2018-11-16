@@ -1,22 +1,65 @@
 body{
-    font-family: 'Montserrat', sans-serif;
-}
-
-.wrapper{
-    width:40%;
-    margin:auto;
+    
+    text-align: center;
 }
 
 header{
     background-image: url(../images/dinosaure.jpg);
    background-repeat: no-repeat;
    background-size: 100%;
-   margin-bottom:30px;
+   position:relative;
+   
 }
 
-.logo{
-    margin:auto;
+.bandeau{
+    position: absolute;
+    top:603px;
+    right:0;
 }
+
+nav{
+    height:50px;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position:fixed;
+    z-index:2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li {
+    display:inline-block;
+    margin-left:60px;
+    
+}
+
+nav ul li:last-child{
+    background-color: #4374e0;
+    width:100px;
+    height:20px;
+}
+
+nav ul li:hover{
+    border:1px solid #fff;
+}
+
+nav ul{
+    padding-top:15px;
+    text-align: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.wrapper{
+    width:40%;
+    margin:auto;
+    padding-top: 30px;
+}
+
+
 
 h1{
     font-size:2.5em;
@@ -31,17 +74,26 @@ p{
     margin-top:10px;
     margin-bottom:10px;
     line-height: 1.1em;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left p,
+.right p{
+    text-align: left;
 }
 
 .big{
     font-size:1.2em;
     text-align: center;
     line-height: 1.4em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .deux{
     margin-bottom:30px;
-    margin-top:30px;
+    margin-top:60px;
 }
 
 .left{
@@ -64,6 +116,29 @@ h2{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.2em;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center{
+    margin:20px auto;
+}
+
+.boutonbleu{
+    background-color: #4374e0;
+    width:120px;
+    height:25px;
+    
+}
+
+.boutonbleu p{
+    text-align: center;
+    padding-top:5px;
+}
+
+.boutonbleu a{
+    text-decoration: none;
+    color:#fff;
 }
 
 hr{
@@ -72,21 +147,30 @@ hr{
 }
 
 .trois{
-    margin-top:30px;
+    margin-top:60px;
 }
 
 
 h3{
-    font-size:1.5em;
+    font-size:2em;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom:30px;
 
+}
+
+.partenaires{
+    width:25%;
+    float:left;
 }
 
 footer{
+    margin-top:30px;
     background-color: #000;
 }
+
+
 
 footer a{
     display: block;
@@ -98,3 +182,8 @@ footer a{
     width:50%;
     float:left;
 }
+
+.footleft p{
+    text-align: left;
+}
+
