@@ -1,0 +1,337 @@
+body{
+    margin:auto;
+    background-color: #252525
+}
+
+/* DEBUT HEADER */
+
+header{
+    background-color: #f5f5f5;
+    height:200px;
+}
+
+.header_left{
+    float:left;
+    width:20%;
+    border-left: 2px solid #ea9f05;
+    margin-left :400px;
+    margin-top:70px;
+}
+
+h1{
+    margin-left:30px;
+    font-size:1.5em;
+}
+
+#logo{
+    margin-left:30px;
+}
+
+span{
+    color:#ea9f05;
+}
+
+.header_right{
+    float:left;
+    width:40%;
+    margin-top:40px;
+    margin-left:120px;
+}
+
+.rectangle{
+    border:2px solid #000;
+    padding:10px 15px;
+    height:50px;
+    width:60%;;
+}
+
+.icone, .icone2{
+    float:left;
+}
+
+.caption{
+    float:left;
+    margin-top:20px;
+    margin-left:20px;
+    margin-right:90px;
+}
+
+.caption a, .caption2 a{
+    text-decoration:none;
+    color:#4c4c4c;
+}
+
+
+.caption2{
+    float:left;
+    margin-top:20px;
+    margin-left:20px;
+}
+
+h2{
+    font-size:1.3em;
+    margin-left:365px;
+    margin-top:10px;
+}
+
+nav ul{
+    margin-left:120px;
+    margin-top:20px;
+}
+
+nav ul li{
+    display:inline-block;
+    border-left:1px solid black;
+    padding:10px;  
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+    margin-left:5px;
+}
+
+/* FIN HEADER */
+
+
+/* DEBUT GRANDE SECTION */
+
+.wrapper{
+    width:60%;
+    margin:auto;
+}
+
+.full-size{
+    background-image: url(../img/header-page-catalogue.png);
+    background-repeat: no-repeat;
+    width:100%;
+    height:334px;
+    margin-top:15px;
+    
+    
+}
+
+.cartes{
+    background-color: #fff;
+    width:1052px;
+    padding-top:50px;
+    padding-bottom:100px;
+    z-index: 0;
+    
+}
+
+.cards, .cards1{
+    float:left;
+    width:35%;
+    position:relative;
+}
+
+.cards1{
+    margin-left:110px;
+}
+
+.cards{
+    margin-left:100px;
+}
+
+.clear{
+    clear: both;
+}
+
+.promo{
+    width:75px;
+    height: 40px;
+    background-color: #4c4c4c;
+    border-bottom: 3px solid #252525;
+    border-left:3px solid #252525;
+    border-radius:5px;
+    position:absolute;
+    top:8px;
+    right:-23px;
+}
+
+.promo p{
+    color:#ea9f05;
+    font-size: 1.9em;
+    text-align: center;
+    padding-top:5px;
+}
+
+.img1 {
+    background: url(../img/gant-boxe-2.png) no-repeat;
+    width:100%;
+    height:360px;
+    border:1px solid black;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.6);
+    margin-bottom:15px;
+    
+}
+
+.img2 {
+    background: url(../img/gant-boxe-1.png) no-repeat;
+    width:100%;
+    height:360px;
+    border:1px solid black;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.6);
+    margin-bottom:15px;
+}
+
+.img3 {
+    background: url(../img/gant-boxe-2.png) no-repeat;
+    width:100%;
+    height:360px;
+    border:1px solid black;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.6);
+    margin-bottom:15px;
+}
+
+.img4 {
+    background: url(../img/gant-boxe-1.png) no-repeat;
+    width:100%;
+    height:360px;
+    border:1px solid black;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.6);
+    margin-bottom:15px;
+}
+
+.descriptif{
+    transform:translate(0, 336px);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.clic{
+    width:200px;
+    height:20px;
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    padding-top:4px;
+    border-bottom: 2px solid rgb(19, 19, 19);
+    margin-top:10px;
+    float:left;
+    
+}
+
+.clic a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.rayé{
+    text-decoration: line-through; 
+    float:left;
+    margin-left:30px;
+    margin-top:10px;
+    font-size:1.3em;
+}
+
+.jaune{
+    color:#ea9f05;
+    font-size:2.7em;
+    margin-left:23px;
+    float:left;
+}
+
+.petit_trait{
+    margin-left:242px;
+    transform:translate(0, -8px);
+    margin-bottom:50px;
+}
+
+/* FIN GRANDE SECTION */
+
+
+/* DEBUT FOOTER */
+
+
+footer{
+    background-color: #4c4c4c;
+    transform:translate(0,-15px);
+    z-index:1;
+}
+
+.big {
+    width:100%;
+    height:15px;
+    background-color: #4c4c4c;
+    transform:translate(0, -35px);
+    z-index: 2;
+}
+
+.navigation{
+    z-index:3;
+    transform:translate(615px, -20px);
+    background-color: #f5f5f5;
+    border:1px solid grey;
+    border-radius:5px;
+    width:30%;
+    height:40px;
+
+}
+
+.navigation ul{
+    text-align: center;
+    margin-top:10px;
+}
+
+.navigation ul li{
+    display:inline-block;
+    padding-left:20px;
+}
+
+.navigation ul li:first-child{
+    padding-left:0;
+}
+
+.navigation a{
+    text-decoration: none;
+    color:grey;
+}
+
+.navigation i{
+    color:grey;
+    font-size:0.8em;
+}
+
+.icones_foot{
+    float:left;
+    width:10%;
+    margin-right:30px;
+}
+
+.icones{
+    transform:translate(511px, 0);
+}
+
+.rond{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.text{
+    color:white;
+    text-align:center;
+}
+
+.reseaux{
+    text-align:center;
+}
+
+.reseaux ul li{
+    display: inline-block;
+    padding-left:20px;
+    margin-top:40px;
+}
+
+.copyright{
+    color:white;
+    text-align: center;
+    margin-top:40px;
+    padding-bottom:20px;
+}
+
+/* FIN FOOTER */
+
+
+
