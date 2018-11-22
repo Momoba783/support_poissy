@@ -304,25 +304,263 @@ document.write("du texte");
 var unePhrase = "bonjour comment vas-tu ?";
 d(unePhrase.toUpperCase());
 
-function addition(valeur1, valeur2){
+function addition(valeur1, valeur2) {
     d("j'appelle la fonction addition");
     var resultat = valeur1 + valeur2;
     return resultat;
 }
-d(addition(1,6));
+d(addition(1, 6));
 
 //exo : faire une fonction qui calcule la TVA d'un prix. (19.6)
 
 
-function  appliquerTVA(prixHT){
-    var prixTTC = prixHT * (1+0.196);
+
+//exercice faire une fonction qui calcule la TVA d'un prix. (19.6)
+
+function appliquerTVA(prixHT) {
+
+    var prixTTC = prixHT * (1 + 0.196);
     return prixTTC;
 }
 
-d(appliquerTVA(155));//leprix de la TVA
+d(appliquerTVA(155));//le prix avec la TVA
+
+//creer une fonction appliquerTVA2 qui permet de calculer le prix TTC
+// avec une TVA définie par l'utilisateur par exemple
+//appliquerTVA2(155,19.6)
+
+function appliquerTVA2(prixHT, TVA) {
+    var prixTTC = prixHT * (1 + TVA / 100);
+    return prixTTC.toFixed(2);
+}
+
+d(appliquerTVA2(155, 5.5));
+
+//amélioration possible, afficher seulement 2 chiffres après la
+//virgule :) toFixed()
+
+//function maFuntion(){}
+
+var maFonction = function () {
+    document.write("je suis maFonction <br>");
+}
+
+maFonction();
 
 
+//IIFE = Immediatly Invoked Function Expression
+(function () {
+    d("bonjour je suis la fonction anonyme");
+})();
+
+//ecrire une fonction qui verifie l'age de l'utilisateur
+
+function verifierAge(age) {
+
+    if (age >= 18) {
+        d("vous etes majeur");
+    }
+
+    if (age < 18) {
+        d("vous etes mineur");
+    }
+}
+
+//faire une fonction qui demande l'age de l'utilisateur et qui verifie son age
+
+function demanderAge() {
+
+    do {
+        age = parseInt(prompt("veuillez saisir un age "));
+
+    } while (isNaN(age))
+}
+
+//ecrire une fonction qui demande le nom et prenom de l'utilisateur, ensuite
+//afficher une présentation de celui-ci.
+
+function informations() {
+    var nom, prenom;
+
+    nom = prompt("Veuillez saisir votre nom : ");
+    prenom = prompt("Veuillez saisir votre prenom : ");
+
+    d("Bonjour " + nom + " " + prenom);
+}
+
+//ecrire une fonction qui affiche un "Hello world" x fois défini par
+//l'utilisateur par exemple afficherPhrase(100);
 
 
+function afficherPhrase(nombre) {
+    for (var i = 1; i <= nombre; i++) {
+        d("Hello world " + i);
+    }
+}
 
+afficherPhrase(10);
+
+//fonction presentationFinale(), vous demandez l'age de l'utilisateur,
+//son nom son prenom, et vous verifier aussi son age (mineur ou majeur)
+//ensuite vous afficher une presentation de celui-ci
+
+function presentationFinale() {
+    demanderAge();
+    informations();
+    verifierAge(age)
+}
+
+presentationFinale();
+
+//ecrire une fonction qui verifie le type de donnée
+//d'une variable par exemple verifie(maVariable)
+
+function verifie(x) {
+    d(typeof x);
+}
+
+verifie(maVariable);
+
+
+//Ecrire une fonction qui affiche un message pour informer l'utilisateur si la variable qu'il teste est de type "chaine de caractères" ou "nombre". Par exemple vérifie(maVariable) ---> "Votre variable est de type : "
+
+function verifier(maVariable) {
+    if (typeof maVariable == "string") {
+        d("Votre variable est de type " + typeof maVariable);
+    }
+    else if (typeof maVariable == "number") {
+        d("Votre variable est de type " + typeof maVariable);
+    }
+    else {
+        d("Votre variable est de type " + typeof maVariable);
+    }
+}
+
+verifier("du texte");
+verifier(15);
+verifier([1, 2, 3]);
+
+
+//Portée global d'une variable (variable en dehors de la fonction)
+
+var animal = "un chien";
+
+function test() {
+    d(animal);
+}
+
+test();
+
+//Portée locale d'une variable (variable dans la fonction (avec le mot var))
+function test2() {
+    var animal2 = "un chat";
+    d(animal2);
+}
+
+d("<h2>Array (les tableaux)</h2>");
+
+var liste_fruits = ["fraise", "pomme", "banane", "peche", "fraise", "pomme", "banane", "peche", "fraise", "pomme", "banane", "peche", "fraise", "pomme", "banane", "peche", "fraise", "pomme", "banane", "peche", "fraise", "pomme", "banane", "peche"];
+
+d(liste_fruits);
+console.log(liste_fruits);
+
+for (var i = 0; i < liste_fruits.length; i++) {
+    d(liste_fruits[i]);
+}
+
+//afficher seulement les bananes.
+
+for (var i = 0; i < liste_fruits.length; i++) {
+
+    if (liste_fruits[i] == "banane") {
+        d(liste_fruits[i]);
+    }
+}
+
+for (var indice in liste_fruits){
+    d(indice + " : " + liste_fruits[indice]);
+}
+
+//afficher seulement les pêches.
+
+for (var indice in liste_fruits){
+
+    if (liste_fruits[indice] == "peche"){
+    d(indice + " : " + liste_fruits[indice]);
+}
+}
+
+var list_contact = [["jean","pierre","paul","rachid"], [14,78,47,18,4]];
+
+console.log(list_contact);
+
+d(list_contact[0][2]);
+
+for (var i = 0; i < list_contact.length; i++){
+    d(list_contact[i]);
+
+}
+
+// une boucle imbriquée
+
+for(i = 0; i < list_contact.length; i++){
+    for(j=0; j < list_contact[i].length; j++){
+        d("tableau numero : " + i + " indice numero : " + j + " : " + list_contact[i][j]);
+    }
+}
+
+d("<h2>Object</h2>");
+
+var monObjet = {};
+
+monObjet.nom = "ESCOBAR";
+monObjet.prenom = "Pablo";
+monObjet.age = 45;
+
+d(monObjet.prenom + " " + monObjet.age);
+
+var Humain = {
+    sexe : 'male',
+    origine : "x ou y",
+    age : 30
+}
+
+d(Humain.sexe);
+
+Humain.couleur = "vert";
+
+d(Humain.couleur);
+
+var Voiture = {
+    marque: "Mercedes",
+    modele: "class A",
+    couleur: "noire",
+    changerCouleur: function(nouvelleCouleur){
+            //Voiture.couleur = "rose";
+        return this.couleur = nouvelleCouleur;
+    },
+    optionsDeSerie: ["clim","auto-radio","park-assist"],
+    annee: 2017,
+    motorisation: {
+        energie:"diesel",
+        puissance: "110 cv"
+    }
+};
+
+d(Voiture.modele);
+d(Voiture.couleur);
+Voiture.changerCouleur("violet");
+d(Voiture.couleur);
+d(Voiture.optionsDeSerie[1]);
+d(Voiture.motorisation.energie);
+
+for(var elements in Voiture){
+    d("mes propriétés : " + elements + " valeur : " + Voiture[elements]);
+
+    if(typeof Voiture[elements] == "object"){
+        for(var elemts in Voiture.motorisation){
+            d("propriétés : " + elemts + " valeur : " + Voiture.motorisation[elemts]);
+        }
+    }
+}
 
