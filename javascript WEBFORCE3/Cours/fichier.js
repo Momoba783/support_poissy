@@ -564,3 +564,62 @@ for(var elements in Voiture){
     }
 }
 
+//creer un objet Joueur avec 3 caractéristiques (force, experience, race) afficher les
+
+// var Joueur = {
+//     force: 8,
+//     experience: "expert",
+//     race: "elfe"
+// }
+
+// d(Joueur.force + ' ' + Joueur.experience + ' ' + Joueur.race);
+
+function Animal(nom,espece,categorie,age){
+    this.nom = nom,
+    this.espece = espece,
+    this.categorie = categorie,
+    this.age = age
+}
+
+var lion = new Animal("Simba", "lion", "felin", 10);
+var baleine = new Animal("Mobydick", "baleine", "cetace", 80 );
+
+d(lion.nom);
+d(baleine.categorie);
+
+//créer une classe Joueur avec experience, force et race. et créer deux joueurs
+
+function Joueur(experience, force, race){
+    this.experience = experience,
+    this.force = force,
+    this.race = race
+}
+
+var player1 = new Joueur("expert", 8, "mage");
+var player2 = new Joueur("apprenti", 8, "guerrier");
+
+d(player1.experience + ' ' + player2.race);
+
+
+
+function Vehicule(marque){
+    this.marque = marque;
+}
+
+var megan = new Vehicule("Renault");
+
+megan.demarrer = function(){
+    d("vroum vroum");
+}
+
+megan.demarrer();
+d(megan.marque);
+
+megan.freiner = function(){
+    d("je freine");
+}
+
+megan.freiner;
+
+
+

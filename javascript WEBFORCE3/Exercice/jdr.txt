@@ -1,0 +1,26 @@
+/*
+
+------------ LAISSEZ LIBRE COURS A VOTRE IMAGINATION POUR LE TEXTE --------------- 
+ 
+Exercice : Oyé Oyé ! Bienvenu dans votre JDR Javascript, vous etes capable
+de creer divers Personnages (monstres, guerriers, mages, chasseurs, voleurs)
+avec différentes caractéristiques (pseudo, sante,niveau,points d'experiences, classe, 
+race, armes).
+Une petite présentation de votre héro est nécéssaire.
+Votre Héro se retrouve dans divers situations telle que
+le combat ! :-O Il est donc capable de se défendre en attaquant ses adversaires,
+il inflige des dégats proportionnellement à sa force de combat qui elle dépendera de 
+l'arme utilisée et donc les points de vie de l'adversaire baisse en conséquence ;-). 
+A chaque fois que votre Champion sort vainqueur d'un combat ^_^ il gagne 50 points 
+d'experiences, et prend un niveau chaque 100 points d'experiences. A chaque fois que votre
+héro gagne un niveau, pour atteindre le niveau suivant l'experience est augmenté de 25%.
+
+Par exemple si vous souhaitez creer un magicien, celui ci est capable de faire des attaques 
+magiques qui ne font pas les mêmes dégats qu'un guerrier et son épée ou bien un chasseur 
+et son arc. Un magicien possède également le pouvoir de se soigner et donc si il souhaite 
+soigner un allié il le fera et lui rendra 50% de sa vie. Votre héro n'est pas immortel, 
+il subit des dégats lors de ses périples, vous pouvez lui faire prendre des potions de vie 
+qui lui redonne 20% de sa vie ou bien le booster avec des potions de force qui 
+augmente sa force de 15%. Bonne chance :).
+
+*/
