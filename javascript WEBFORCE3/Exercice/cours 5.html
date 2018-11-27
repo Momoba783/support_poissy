@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>les evenements js</title>
+    <style type="text/css">
+        img {
+            width: 500px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <id="monImage" src="imga.jpg">
+    </div>
+
+    <button id="demarrer">Lancer le carroussel</button>
+    <button id="arreter">Arrêter le carroussel</button>
+
+    <script>
+        var img = 0;
+        var monImage = document.querySelector('#monImage');
+        var demarrer = document.querySelector("#demarrer");
+
+        function f() {
+            img = + 1;
+            monImage.setAttribute("src", "images/" + img + ".jpeg");
+        }
+
+        demarrer.addEventListener("click", function () {
+            window.setInterval("f()", 3000);
+        })
+
+    </script>
+</body>
+
+</html>

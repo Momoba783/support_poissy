@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>les evenements js</title>
+    <style type="text/css">
+        img{
+            width : 500px;
+            height : 400px;
+        }
+    </style>
+</head>
+
+	<body>
+        <h1 onclick="alert('J\'ai cliqué sur mon titre')">Les Studios GHIBLI</h1>
+
+        <div>
+            <img onclick="" id="monImage" src="imga.jpg" title="Miyazaki">
+        </div>
+
+        <button id="changerImage">Changer image</button>
+
+        <h2>Hayao Miyazaki</h2>
+
+        <script>
+    //         var changerImage = document.querySelector("#changerImage");
+    //         changerImage.onclick = function(){
+    //             document.getElementById("monImage").src = "imgb.PNG", title = "Hayao";  
+    //         }
+
+    //         var previous = document.querySelector("#monImage");
+    //    previous.onclick = function(){
+    //        previous.src="imga.jpg"
+    //    }
+
+       var boutton = document.querySelector("#changerImage");
+
+       boutton.addEventListener('click', carroussel);
+
+       function carroussel(){
+           var monImage = document.querySelector("#monImage");
+           var monImageSource = monImage.getAttribute("src");
+
+           switch(monImageSource)
+           {
+               case 'imga.jpg': 
+               monImage.src = 'imgb.PNG';
+               break;
+               case 'imgb.PNG': 
+               monImage.src = 'imgc.jpg';
+               break;
+               case 'imgc.jpg': 
+               monImage.src = 'imgd.jpg';
+               break;
+               case 'imgd.jpg': 
+               monImage.src = 'imge.jpg';;
+               break;
+               case 'imge.jpg': 
+               monImage.src = 'imga.jpg';
+               break;
+           }
+       }
+        
+         //au survol de la souris sur le titre h1, on surligne en rouge (mouseOver)
+         var monTitre = document.querySelector("h1");
+       monTitre.onmouseover = function(){
+           monTitre.style.backgroundColor ="lightblue";
+       }
+
+       monTitre.onmouseout = function(){
+           monTitre.style.backgroundColor ="transparent";
+       }
+
+       var monH2 = document.querySelector("h2");
+       
+       monH2.addEventListener("mouseover", changertxt);
+
+       function changertxt(){
+           monH2.innerHTML = "Miyazaki Hayao";
+       }
+
+       monH2.addEventListener("mouseout", function(){
+           monH2.innerHTML = "Hayao Miyazaki";
+       })
+
+        </script>
+		
+	</body>
+</html>

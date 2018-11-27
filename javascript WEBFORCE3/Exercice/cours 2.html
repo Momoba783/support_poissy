@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Les selecteurs JS</title>
+</head>
+<body>
+
+        <div class="avion">Air bus 1</div>
+        <div class="avion">Air bus 2</div>
+        <div class="avion">Air bus 3</div>
+
+        <div class="voiture">Voiture 1</div>
+        <div class="voiture">Voiture 2</div>
+        <div class="voiture">Voiture 3</div>
+
+        <p>Paragraphe 1</p>
+        <p>Paragraphe 2</p>
+        <p>Paragraphe 3</p>
+        <p>Paragraphe 4</p>
+        <p>Paragraphe 5</p>
+
+        <section id="maSection">Section</section>
+
+        <span>Un span</span>
+
+        <div id="resultat">résultat...</div>
+
+        <script>
+        //SELECTION NATURELLE (SANS getElement)
+        var monId2 = maSection;
+        console.log("sans getElement :" + monId2);
+        console.log("monId2 : " + monId2.innerHTML);
+        console.log("body : " + document.body);
+
+        //SELECTION BYID
+        var monId = document.getElementById("maSection");
+        console.log("contenu de ma section :" + monId.innerHTML);
+        console.log("résultat de l'élement selectionné :" + monId);
+
+        //SELECTION TAGNAME
+       var maBalise = document.getElementsByTagName('span');
+       console.log("ma balise : " + maBalise);
+       console.log("ma balise " + maBalise[0].innerHTML);
+
+        //SELECTION CLASSNAME
+        var mesClasses = document.getElementsByClassName("avion");
+        console.log("type of de mesClasses :"  + typeof mesClasses);
+        console.log("mes classes[0] : " + mesClasses[0].innerHTML);
+
+        //mini exo afficher tous les avions dans la console.
+
+        for (var i = 0; i < mesClasses.length; i++){
+            console.log("mesClasses[i] : " + mesClasses[i].innerHTML);
+        }
+
+        //SELECTION QUERYSELECTORALL
+        var p = document.querySelectorAll("p");
+
+        //afficher le type de l'élement selectionné --> NodeList.
+        console.log("type of de p :"  + typeof p);
+
+        //afficher le contenu du premier paragraphe
+        console.log("p[0] : " + p[0].innerHTML);
+
+        //ensuite afficher tous les paragrphes.
+        for (var i = 0; i < p.length; i++){
+            console.log("p[i] : " + p[i].innerHTML);
+        }
+
+        //SELECTION QUERYSELECTOR
+        var voiture = document.querySelector(".voiture");
+        console.log("contenu de ma voiture : " + voiture.innerHTML);
+
+        //récupérer la première balise "p" avec un querySelector et afficher son contenu
+        var premierP = document.querySelector("p");
+        console.log(premierP.innerHTML);
+
+        </script>
+    
+</body>
+</html>

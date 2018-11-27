@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hey</title>
+</head>
+
+	<body>
+		<div id="main-nav">
+			<ul>
+				<li><a href="#">Lien 1</a></li>
+				<li><a href="#">Lien 1</a></li>
+				<li><a href="#">Lien 1</a></li>
+				<li><a href="#">Lien 1</a></li>
+			</ul>
+		</div>
+
+		<h1>Titre principale de ma page</h1>
+
+		<section class="container">
+			<h2>Sous-titre</h2>
+			<p>Lorem ipsum dolor <span>sit amet</span>, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute <span>irure dolor in reprehenderit</span> in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<h2>Sous-titre</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor <span>in reprehenderit in</span>in reprehenderit in voluptate velit esse
+			<span>cillum dolore eu fugiat</span> nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+
+		<section class="container">
+
+			<h2>Sous-titre</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<h2>Sous-titre</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+
+
+		<footer>
+			<div id="footer-navigation">
+				<ul>
+					<li><a href="#">Lien 1</a></li>
+					<li><a href="#">Lien 1</a></li>
+					<li><a href="#">Lien 1</a></li>
+					<li><a href="#">Lien 1</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<script>
+        //Information : Pour modifier le style en JS il existe la propriété "style". Adapter à l'exercice.
+
+        // Combien y-a-t'il de span dans mon document ? afficher la reponse dans la console. afficher leur valeur(contenu) et les surligner en jaune.  
+        // - Pareil pour les liens présents dans mon document
+        // - Récupérer les sous-titres de mon document et modifier le contenu à la place de "sous-titre" je veux avoir "Mon joli sous-titre"
+        //- Mes balises p sont sans attributs class... j'aimerai ajouter des classes à mes balises "p" (cf setAttribute js) comme ça je pourrai avoir la class "mes-jolis-paragraphes" dans mes balises "p".
+
+        var mesSpan = document.querySelectorAll("span");
+            var nombre = 0;
+            for(var i = 0; i < mesSpan.length; i++){
+                mesSpan[i].style.background = "yellow";
+                console.log("mes spans : " + mesSpan[i].innerHTML);
+                nombre++;
+            }
+            
+
+            console.log("il y a " + nombre + " span dans le document");
+
+            var mesLiens = document.querySelectorAll("a");
+            var nombreLiens = 0;
+            for(var i = 0; i < mesLiens.length; i++){
+                mesLiens[i].style.background = "blue";
+                mesLiens[i].style.color = "#fff";
+                console.log("mes spans : " + mesLiens[i].innerHTML);
+                nombreLiens++;
+            }
+
+            console.log("il y a " + nombreLiens + " liens dans le document");
+
+            var sousTitres = document.querySelectorAll('h2');
+
+            for(var i = 0; i < sousTitres.length; i++){
+                sousTitres[i].innerHTML = 'Mon Jolie Sous-Titre';
+            }
+
+            var mesP = document.querySelectorAll('p');
+            for(var i = 0; i < mesP.length; i++){
+                mesP[i].setAttribute("class","mes-jolies-paragraphes");
+            }
+       
+
+		</script>
+	</body>
+</html>
