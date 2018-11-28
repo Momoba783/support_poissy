@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <title>setInterval JS</title>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+        h1{
+            color:red;
+            font-size:3em;
+            text-align: center;
+        }
+
+        p{
+            font-size : 1.5em;
+            color: rgb(199, 24, 54);
+            text-align: justify;
+            border: 2px solid red;
+            border-radius:20px;
+            padding:20px;
+        }
+
+        button{
+            width:100px;
+            height: 30px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <!-- <form>
+        <input type="text" id="color" placeholder="saisir un code couleur" maxlength="6">
+        <input type="submit" id="buttonColor" value="changer couleur fond">
+    </form>
+
+
+    <script>
+
+        //    /*
+        //    Demander à l'utilisateur si c'est un homme ou une femme.
+        //    Ensuite lui demander son prénom.
+        //    Afficher le prénom de l'utilisateur de couleur rose, si c'est une femme, bleue si c'est un homme.
+        //    */ 
+
+        var sexe = prompt("sexe ?");
+        var prenom = prompt("prenom ?");
+        var p = document.write("<p></p>");
+        var text = document.querySelector("p");
+
+        if (sexe == "homme") {
+            text.innerHTML = prenom;
+            text.setAttribute("style", "color:blue");
+        }
+
+        if (sexe == "femme") {
+            text.innerHTML = prenom;
+            text.setAttribute("style", "color:pink");
+        }
+
+
+        var form = document.querySelector('form');
+        var fond = document.querySelector("#color");
+
+        form.addEventListener('submit', function () {
+
+            document.querySelector("body").setAttribute("style", "background:#" + fond.value + ";");
+        });
+
+
+
+
+    </script> -->
+
+    <h1>Apparition Paragraphe</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id optio, ipsam iusto dicta et molestiae quas dolorem debitis? Temporibus, labore asperiores laborum suscipit sint quibusdam et veritatis sit recusandae assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam architecto nesciunt inventore. Harum rerum optio impedit veniam ipsum expedita! Dicta voluptates, cum deleniti totam quaerat quidem architecto temporibus nesciunt.</p>
+    <button>Clique</button>
+
+    <script>
+        /*
+        HTML : créer un titre (Apparition Paragraphe) avec un paragraphe et un bouton
+        CSS : donner un style (couleur et taille) à vos éléments.
+        JS : lorsque je clique sur le boutton, mon paragraphe disparait et un nouveau style que j'aurai au préalable défini dans mon CSS est appliqué à mon titre. le titre change lui aussi et affiche > Disparition paragraphe.
+        */
+    </script>
+</body>
+
+
+</html>

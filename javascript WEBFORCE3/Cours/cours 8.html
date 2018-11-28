@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+	<title>setInterval JS</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		.titre-principale{
+			color: #fff;
+			background: #000;
+			font-style: italic;
+			text-align: center;
+		}
+
+		.titre-principale-new{
+			color: #fff;
+			background: red;
+			font-style: normal;
+			text-align: center;
+		}
+
+		.presentation{
+			border: 1px solid black;
+			padding: 10px;
+			text-align: justify;
+		}
+
+	</style>
+</head>
+	<body>
+
+		<h1 class="titre-principale">Apparition Paragraphe</h1>
+		<p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<button id="disable">Disparition</button>
+		
+		<script>
+				/* 
+				HTML : creer 1 titre (Apparission Paragraphe) avec un paragraphe et un boutton
+				CSS : donner un style (couleur, et taille) à vos éléments.
+				JS : lorsque je cliques sur le boutton, mon paragraphe disparait et un nouveau style que j'aurais au préalable définie dans mon CSS est appliqué à mon titre. Le titre change lui aussi et affiche >Disparission paragraphe.
+			*/
+
+			var magie = document.querySelector("#disable");
+			var text = document.querySelector(".presentation");
+			var titre = document.querySelector(".titre-principale");
+
+			magie.addEventListener("click", function(){
+				text.style.display = "none";
+				titre.className = "titre-principale-new";
+				titre.innerHTML = "Disparition paragraphe";
+			})
+		</script>
+	</body>
+
+</html>

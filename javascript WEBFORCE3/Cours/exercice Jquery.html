@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery js</title>
+
+    
+</head>
+
+<body>
+    <header>
+        <h1>Mon gros titre</h1>
+    </header>
+
+    <section class="section">
+        <h2>Mon sous-titre</h2>
+        <div class="blabla">
+            <p>Il était une fois</p>
+            <p>Il était deux fois</p>
+            <p>Il était trois fois</p>
+        </div>
+        <span id="violet"></span>
+    </section>
+
+    <footer>
+        <div class="carre"></div>
+        <button id="agrandir">agrandir le carré</button>
+    </footer>
+
+
+
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script>
+        // $(function () {
+        //     var monTitre = $("h1");
+        //     console.log(monTitre[0].innerHTML);
+
+        //     var monSoustitre = $("h2");
+        //     console.log(monSoustitre[0].innerHTML);
+
+        //     var monText = $("p:eq(2)");
+        //     console.log(monText[0].innerHTML);
+
+        //     var monID = $("span[violet]");
+        //     console.log(monID[0].innerHTML);
+
+        //     var monFooter = $("footer");
+        //     console.log(monFooter[0].innerHTML);
+
+        //     var monHeader = $("header");
+        //     console.log(monHeader[0].innerHTML);
+
+        //     var maClass = $(".blabla");
+        //     console.log(maClass[0].innerHTML);
+
+        //     $("p").click(function(){
+        //         alert("j'ai cliké")
+        //     });
+
+
+        // });
+
+        //changer la couleur du texte et son arriere plan lorsque je passe sur le texte. Et lorsque je sors du texte je reviens sur l'effet d'origine
+
+        $("p").mouseover(function(){
+            $("p").css({
+                "color" : "red",
+                "background" : "yellow"
+            });
+        });
+        
+       
+
+       $("p").mouseout(function(){
+            $("p").css({
+                "color" : "black",
+                "background" : "white"
+            });
+        });
+
+
+        //déclarer un carré taille 10x10 (donnez lui une couleur) et à chaque fois que je clique sur le boutton "agrandir" mon carré grandit de 10px ! 10x10... 20x20... 30x30 etc. ajouter également un boutton reset qui permet de revenir à la taille initiale
+
+                  $(function(){
+                var hauteur = 10 , largeur = 10;
+
+                $(".carre").css({
+                        "background": "red",
+                        "width" : largeur+"px",
+                        "height": hauteur+"px",
+                        "border" : "1px solid black"
+                    });
+                
+                $("#grandi").click(function(){
+                
+                    hauteur += 10;
+                    largeur += 10;
+
+                    $(".carre").css({
+                        "width" : largeur+"px",
+                        "height": hauteur+"px"
+                    });
+                });
+
+                $("#reset").click(function(){
+                    hauteur = 10; largeur=10;
+                    
+                    $(".carre").css({
+                        "width" : largeur+"px",
+                        "height": hauteur+"px"
+                    });
+                });
+                
+            });
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+	<title>setInterval JS</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		img{
+			width: 400px;
+			height: 300px;
+		}
+	</style>
+</head>
+	<body>
+
+		<div>
+			<img id="monImage" src="images/imga.jpg">
+		</div>
+
+		<button id="demarrer">Lancer le carroussel</button>
+		<button id="arreter">Stoper le carroussel</button>
+
+		<script>
+			var img = 0;
+			var monImage = document.querySelector('#monImage');
+			var demarrer = document.querySelector("#demarrer");
+			var arreter = document.querySelector("#arreter");
+			
+			function f(){
+				img += 1;
+				monImage.setAttribute("src", "images/" + img + ".jpg");
+				if(img >= 4){
+					img = 0;
+				}
+			}
+
+			demarrer.addEventListener("click", function(){
+				timer = window.setInterval("f()", 3000);
+			})
+
+			arreter.addEventListener("click", function(){
+				clearInterval(timer);
+			})
+
+
+
+
+			
+		</script>
+	</body>
+</html>

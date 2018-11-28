@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery js</title>
+</head>
+
+<body>
+
+    <h1>Un titre</h1>
+    <p>texte numero 1</p>
+    <p>texte numero 2</p>
+    <span class="rouge">un span</span>
+    <span class="bleu">un span</span>
+    <span class="rouge">un span</span>
+    <div id="monId">une div</div>
+    <input type="text" name="nom">
+
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script>
+        //quand mon document est prêt, fais qqchose
+        $(document).ready(function () {
+            var monTitre = $("h1");
+            console.log(monTitre);
+            document.write(monTitre[0].innerHTML);
+
+        });
+
+        $("p:last");
+
+            // alert("Chargement terminé !"); //si l'alert ne s'ouvre pas c'est que le Jquery n'est pas chargé
+
+
+
+
+    </script>
+</body>
+
+</html>
