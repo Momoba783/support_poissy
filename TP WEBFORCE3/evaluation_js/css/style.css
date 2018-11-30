@@ -169,13 +169,13 @@ table .case{
 /* FIN TABLEAU total */
 /* DEBUT REMISE */
 /*DEBUT FOOTER*/
-footer p#ghost{
-    border: 1px solid black;
-    text-align: center;
-    font-size: 20px;
-    margin: 30px 0px;
-    display: block;
-}
+    footer p#ghost{
+        border: 1px solid black;
+        text-align: center;
+        font-size: 20px;
+        margin: 30px 0px;
+        display: block;
+    }
 /* FIN REMISE */
 
 footer span{

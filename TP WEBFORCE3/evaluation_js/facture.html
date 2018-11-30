@@ -1,253 +1,243 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="keywords" content="facture js javascript">
-	<meta name="author" content="Sonia Bougamha, Mohamed Ba, Mathieu Berrah">
-	<meta name="description" content="Facture en javascript">
-	<link rel="stylesheet" href="css/style.css"><!-- CSS-->
-	<title>Evaluation Web Force 3: JavaScript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="facture js javascript">
+    <meta name="author" content="Sonia Bougamha, Mohamed Ba, Mathieu Berrah">
+    <meta name="description" content="Facture en javascript">
+    <link rel="stylesheet" href="css/style.css"><!-- CSS-->
+    <title>Evaluation Web Force 3: JavaScript</title>
 </head>
-
 <body>
-	<section id="conteneur">
-		<header>
-			<!-- TITRE PRINCIPAL DE LA PAGE -->
-			<h1>FACTURE</h1>
-			<!-- Input : Société émettrice -->
-			<section class="societe">
-				<input type="text" placeholder="Nom de la société émettrice" class="nomSociete">
-
-				<input type="text" placeholder="Adresse de la société" class="adresseSociete">
-
-
-				<input type="text" placeholder="Entrez un numéro de téléphone valide" class="telSociete">
-
-
-				<input type="text" placeholder="Adresse de messagerie" class="mailSociete">
-			</section>
-			<section class="factureDate">
-				<div class="facture">
-					<p>N° DE FACTURE</p>
-					<input type="text" placeholder="01" class="numeroFacture">
-				</div>
-				<!-- Select Option date : Jour, Mois, Année -->
-				<div id="selectDate">
-					<p>DATE</p>
-					<select id="selectJour">
-					</select>
-					<select id="selectMois">
-					</select>
-					<select id="selectAnnee">
-					</select>
-				</div>
-			</section>
-		</header>
-
-		<div class="clear"></div>
-
-		<!--PARTIE CENTRALE-->
-		<div class="Partie_centrale">
-			<aside class="droite">
-				<h4>à :</h4><br>
-				<select name="" id="select_clients">
-					<option>Nouveau client</option>
-					<option>Shueisha Inc.</option>
-					<option>Editions Tonkam</option>
-					<option>Soleil Manga</option>
-					<option>Hakusensha Corp.</option>
-					<option>Editions Glénat</option>
-				</select>
-				<br><input type="text" name="nomDelasociete" placeholder="Nom de la société" required>
-				<input type="text" name="nom du client" placeholder="Nom" required>
-				<input type="text" name="Rue" placeholder="Rue" required>
-				<input type="text" name="Code postal" placeholder="Code postal, ville" required>
-				<input type="text" name="numéro de téléphone" placeholder="Numéro de téléphone" required>
-			</aside>
-			<aside class="gauche">
-				<h4>expédier à :</h4><br>
-				<select name="" id="select_clientsb">
-					<option>Nouveau client</option>
-					<option>Shueisha Inc.</option>
-					<option>Editions Tonkam</option>
-					<option>Soleil Manga</option>
-					<option>Hakusensha Corp.</option>
-					<option>Editions Glénat</option>
-				</select>
-				<br><input type="text" name="nomDelasociete" placeholder="Nom de la société" required>
-				<input type="text" name="nom du client" placeholder="Nom" required>
-				<input type="text" name="Rue" placeholder="Rue" required>
-				<input type="text" name="Code postal" placeholder="Code postal, ville" required>
-				<input type="text" name="numéro de téléphone" placeholder="Numéro de téléphone" required>
-				<div class="clear"></div>
-			</aside>
-
-		</div>
-		<table class="details">
-			<!-- Titre hors de l'encadré-->
-			<caption>
-				<h2>Détails des produits facturés</h2>
-			</caption>
-			<!-- En-tête du tableau-->
-			<thead>
-				<tr>
-					<th>
-						<h4>Code Produit</h4>
-					</th>
-					<th>
-						<h4>Libellé produit</h4>
-					</th>
-					<th>
-						<h4>Prix - Unitaire en euros</h4>
-					</th>
-					<th>
-						<h4>Quantité commandé</h4>
-					</th>
-					<th>
-						<h4>Montant en euros</h4>
-					</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><select>
-							<option value=""></option>
-							<option value="m1">
-								123456789101OP
-							</option>
-							<option value="m2">
-								234567891011DB
-							</option>
-							<option value="m3">
-								345678910111FMA
-							</option>
-							<option value="m4">
-								456789101112N
-							</option>
-							<option value="m5">
-								567891011121GTO
-							</option>
-						</select></td>
-					<td></td>
-					<td></td>
-					<td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><select>
-							<option value=""></option>
-							<option value="m1">
-								123456789101OP
-							</option>
-							<option value="m2">
-								234567891011DB
-							</option>
-							<option value="m3">
-								345678910111FMA
-							</option>
-							<option value="m4">
-								456789101112N
-							</option>
-							<option value="m5">
-								567891011121GTO
-							</option>
-						</select></td>
-					<td></td>
-					<td></td>
-					<td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><select>
-							<option value=""></option>
-							<option value="m1">
-								123456789101OP
-							</option>
-							<option value="m2">
-								234567891011DB
-							</option>
-							<option value="m3">
-								345678910111FMA
-							</option>
-							<option value="m4">
-								456789101112N
-							</option>
-							<option value="m5">
-								567891011121GTO
-							</option>
-						</select></td>
-					<td></td>
-					<td></td>
-					<td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><select>
-							<option value=""></option>
-							<option value="m1">
-								123456789101OP
-							</option>
-							<option value="m2">
-								234567891011DB
-							</option>
-							<option value="m3">
-								345678910111FMA
-							</option>
-							<option value="m4">
-								456789101112N
-							</option>
-							<option value="m5">
-								567891011121GTO
-							</option>
-						</select></td>
-					<td></td>
-					<td></td>
-					<td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
-					<td></td>
-				</tr>
-			</tbody>
-		</table>
-		<table class="total">
-			<tr>
-				<td class="montant">SOUS-TOTAL&nbsp;</td>
-				<td class="case"></td>
-			</tr>
-			<tr>
-				<td class="montant">T.V.A. 20,00%&nbsp;</td>
-				<td class="case"></td>
-			</tr>
-			<tr>
-				<td class="montant">MANUTENTION&nbsp;</td>
-				<td class="case"></td>
-			</tr>
-			<tr>
-				<td class="montant">TOTAL DU (TOTAL TTC)&nbsp;</td>
-				<td class="case"></td>
-			</tr>
-		</table>
-
-		<footer>
-			<p id="ghost">
-				N.B. Votre facture a dépassé 1000€, vous avez obtenu pour votre prochaine facture une remise de : <span id="remise"></span>
-				représentant 5% de votre commande ci-dessus.
-			</p>
-			<!-- Informations de contact -->
-			<p>Veuillez rédiger tous les chèques à l'ordre de </p><span>Nom de la société</span><br>
-			<p> Pour toute question concernant cette facture, veuillez contacter : DUPONT au </p><br><span>Numéro de téléphone</span>
-			<p> ou à l'adresse</p><span>Adresse Email</span>
-			<br>
-			<br>
-			<p class="txtGras">Nous vous remercions de votre confiance.</p>
-			<!-- Bouton(Imprimer la page) -->
-			<br>
-			<a href="javascript:window.print()"><button>Imprimer cette page</button></a>
-		</footer>
-	</section>
-	<script type="text/javascript" src="js/script.js"></script>
-	<!--Lien vers le fichier JS-->
+    <section id="conteneur">
+        <header>
+            <!-- TITRE PRINCIPAL DE LA PAGE -->
+            <h1>FACTURE</h1>
+            <!-- Input : Société émettrice -->
+            <section class="societe">
+                <input type="text" placeholder="Nom de la société émettrice" class="nomSociete">
+                <input type="text" placeholder="Adresse de la société" class="adresseSociete">
+                <input type="text" placeholder="Entrez un numéro de téléphone valide" class="telSociete">
+                <input type="text" placeholder="Adresse de messagerie" class="mailSociete">
+            </section>
+            <section class="factureDate">
+                <div class="facture">
+                    <p>N° DE FACTURE</p>
+                    <input type="text" placeholder="01" class="numeroFacture">
+                </div>
+                <!-- Select Option date : Jour, Mois, Année -->
+                <div id="selectDate">
+                    <p>DATE</p>
+                    <select id="selectJour">
+                    </select>
+                    <select id="selectMois">
+                    </select>
+                    <select id="selectAnnee">
+                    </select>
+                </div>
+            </section>
+        </header>
+        <div class="clear"></div>
+        <!--PARTIE CENTRALE-->
+        <div class="Partie_centrale">
+            <aside class="droite">
+                <h4>à :</h4><br>
+                <select name="" id="select_clients">
+                    <option id="selectA">Nouveau client</option>
+                    <option id="selectB">Shueisha Inc.</option>
+                    <option id="selectC">Editions Tonkam</option>
+                    <option id="selectD">Soleil Manga</option>
+                    <option id="selectE">Hakusensha Corp.</option>
+                    <option id="selectF">Editions Glénat</option>
+                </select>
+                <br><input type="text" name="nomDelasociete" placeholder="Nom de la société" required id='inputA'>
+                <input type="text" name="nom du client" placeholder="Nom" required id='inputB'>
+                <input type="text" name="Rue" placeholder="Rue" required id='inputC'>
+                <input type="text" name="Code postal" placeholder="Code postal, ville" required id='inputD'>
+                <input type="text" name="numéro de téléphone" placeholder="Numéro de téléphone" required id='inputE'>
+            </aside>
+            <aside class="gauche">
+                <h4>expédier à :</h4><br>
+                <select name="" id="select_clientsb">
+                    <option id="selectG">Nouveau client</option>
+                    <option id="selectH">Shueisha Inc.</option>
+                    <option id="selectI">Editions Tonkam</option>
+                    <option id="selectJ">Soleil Manga</option>
+                    <option id="selectK">Hakusensha Corp.</option>
+                    <option id="selectL">Editions Glénat</option>
+                </select>
+                <br><input type="text" name="nomDelasociete" placeholder="Nom de la société" required id='inputF'>
+                <input type="text" name="nom du client" placeholder="Nom" required id='inputG'>
+                <input type="text" name="Rue" placeholder="Rue" required id='inputH'>
+                <input type="text" name="Code postal" placeholder="Code postal, ville" required id='inputI'>
+                <input type="text" name="numéro de téléphone" placeholder="Numéro de téléphone" required id='inputJ'>
+                <div class="clear"></div>
+            </aside>
+        </div>
+        <table class="details">
+            <!-- Titre hors de l'encadré-->
+            <caption>
+                <h2>Détails des produits facturés</h2>
+            </caption>
+            <!-- En-tête du tableau-->
+            <thead>
+                <tr>
+                    <th>
+                        <h4>Code Produit</h4>
+                    </th>
+                    <th>
+                        <h4>Libellé produit</h4>
+                    </th>
+                    <th>
+                        <h4>Prix - Unitaire en euros</h4>
+                    </th>
+                    <th>
+                        <h4>Quantité commandé</h4>
+                    </th>
+                    <th>
+                        <h4>Montant en euros</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><select>
+                            <option value=""></option>
+                            <option value="m1">
+                                123456789101OP
+                            </option>
+                            <option value="m2">
+                                234567891011DB
+                            </option>
+                            <option value="m3">
+                                345678910111FMA
+                            </option>
+                            <option value="m4">
+                                456789101112N
+                            </option>
+                            <option value="m5">
+                                567891011121GTO
+                            </option>
+                        </select></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><select>
+                            <option value=""></option>
+                            <option value="m1">
+                                123456789101OP
+                            </option>
+                            <option value="m2">
+                                234567891011DB
+                            </option>
+                            <option value="m3">
+                                345678910111FMA
+                            </option>
+                            <option value="m4">
+                                456789101112N
+                            </option>
+                            <option value="m5">
+                                567891011121GTO
+                            </option>
+                        </select></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><select>
+                            <option value=""></option>
+                            <option value="m1">
+                                123456789101OP
+                            </option>
+                            <option value="m2">
+                                234567891011DB
+                            </option>
+                            <option value="m3">
+                                345678910111FMA
+                            </option>
+                            <option value="m4">
+                                456789101112N
+                            </option>
+                            <option value="m5">
+                                567891011121GTO
+                            </option>
+                        </select></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><select>
+                            <option value=""></option>
+                            <option value="m1">
+                                123456789101OP
+                            </option>
+                            <option value="m2">
+                                234567891011DB
+                            </option>
+                            <option value="m3">
+                                345678910111FMA
+                            </option>
+                            <option value="m4">
+                                456789101112N
+                            </option>
+                            <option value="m5">
+                                567891011121GTO
+                            </option>
+                        </select></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="total">
+            <tr>
+                <td class="montant">SOUS-TOTAL&nbsp;</td>
+                <td class="case"></td>
+            </tr>
+            <tr>
+                <td class="montant">T.V.A. 20,00%&nbsp;</td>
+                <td class="case"></td>
+            </tr>
+            <tr>
+                <td class="montant">MANUTENTION&nbsp;</td>
+                <td class="case"></td>
+            </tr>
+            <tr>
+                <td class="montant">TOTAL DU (TOTAL TTC)&nbsp;</td>
+                <td class="case"></td>
+            </tr>
+        </table>
+        <footer>
+            <p id="ghost">
+                N.B. Votre facture a dépassé 1000€, vous avez obtenu pour votre prochaine facture une remise de : <span
+                    id="remise"></span>
+                représentant 5% de votre commande ci-dessus.
+            </p>
+            <!-- Informations de contact -->
+            <p>Veuillez rédiger tous les chèques à l'ordre de </p><span id="nomfacturant">Nom de la société</span><br>
+            <p> Pour toute question concernant cette facture, veuillez contacter : DUPONT au </p><br><span id="telfacturant">Numéro
+                de téléphone</span>
+            <p> ou à l'adresse</p><span id="mailfacturant">Adresse Email</span>
+            <br>
+            <br>
+            <p class="txtGras">Nous vous remercions de votre confiance.</p>
+            <!-- Bouton(Imprimer la page) -->
+            <br>
+            <a href="javascript:window.print()"><button>Imprimer cette page</button></a>
+        </footer>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--Lien vers le fichier JS-->
 </body>
-
 </html>
