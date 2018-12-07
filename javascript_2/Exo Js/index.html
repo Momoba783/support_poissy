@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="facture js javascript">
+    <meta name="author" content="exercice Js">
+    <meta name="description" content="Exo">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Exercice js</title>
+</head>
+
+<body>
+    <div class=" row jumbotron jumbotron-fluid">
+        <div class="container">
+            <h2 class="display-4">Gestion de mes contacts</h2>
+        </div>
+    </div>
+
+    <section class="row">
+        <div class=" col-6 droite">
+            
+            <form>
+                    <h3>Ajouter un contact</h3>
+                    <hr>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Nom</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="Nom" placeholder="Nom">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Prénom</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="Prenom" placeholder="Prénom">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="Email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Tél</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="Tel" placeholder="Téléphone" maxlength="10">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Ajouter le contact</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-6 gauche">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td>Nom</td>
+                        <td>Prénom</td>
+                        <td>Email</td>
+                        <td>Téléphone</td>
+                    </tr>
+                    <tr>
+                        <td id="Lenom"></td>
+                        <td id="Leprenom"></td>
+                        <td id="Lemail"></td>
+                        <td id="Letel"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

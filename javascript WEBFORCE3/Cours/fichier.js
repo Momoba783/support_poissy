@@ -477,34 +477,34 @@ for (var i = 0; i < liste_fruits.length; i++) {
     }
 }
 
-for (var indice in liste_fruits){
+for (var indice in liste_fruits) {
     d(indice + " : " + liste_fruits[indice]);
 }
 
 //afficher seulement les pêches.
 
-for (var indice in liste_fruits){
+for (var indice in liste_fruits) {
 
-    if (liste_fruits[indice] == "peche"){
-    d(indice + " : " + liste_fruits[indice]);
-}
+    if (liste_fruits[indice] == "peche") {
+        d(indice + " : " + liste_fruits[indice]);
+    }
 }
 
-var list_contact = [["jean","pierre","paul","rachid"], [14,78,47,18,4]];
+var list_contact = [["jean", "pierre", "paul", "rachid"], [14, 78, 47, 18, 4]];
 
 console.log(list_contact);
 
 d(list_contact[0][2]);
 
-for (var i = 0; i < list_contact.length; i++){
+for (var i = 0; i < list_contact.length; i++) {
     d(list_contact[i]);
 
 }
 
 // une boucle imbriquée
 
-for(i = 0; i < list_contact.length; i++){
-    for(j=0; j < list_contact[i].length; j++){
+for (i = 0; i < list_contact.length; i++) {
+    for (j = 0; j < list_contact[i].length; j++) {
         d("tableau numero : " + i + " indice numero : " + j + " : " + list_contact[i][j]);
     }
 }
@@ -520,9 +520,9 @@ monObjet.age = 45;
 d(monObjet.prenom + " " + monObjet.age);
 
 var Humain = {
-    sexe : 'male',
-    origine : "x ou y",
-    age : 30
+    sexe: 'male',
+    origine: "x ou y",
+    age: 30
 }
 
 d(Humain.sexe);
@@ -535,14 +535,14 @@ var Voiture = {
     marque: "Mercedes",
     modele: "class A",
     couleur: "noire",
-    changerCouleur: function(nouvelleCouleur){
-            //Voiture.couleur = "rose";
+    changerCouleur: function (nouvelleCouleur) {
+        //Voiture.couleur = "rose";
         return this.couleur = nouvelleCouleur;
     },
-    optionsDeSerie: ["clim","auto-radio","park-assist"],
+    optionsDeSerie: ["clim", "auto-radio", "park-assist"],
     annee: 2017,
     motorisation: {
-        energie:"diesel",
+        energie: "diesel",
         puissance: "110 cv"
     }
 };
@@ -554,11 +554,11 @@ d(Voiture.couleur);
 d(Voiture.optionsDeSerie[1]);
 d(Voiture.motorisation.energie);
 
-for(var elements in Voiture){
+for (var elements in Voiture) {
     d("mes propriétés : " + elements + " valeur : " + Voiture[elements]);
 
-    if(typeof Voiture[elements] == "object"){
-        for(var elemts in Voiture.motorisation){
+    if (typeof Voiture[elements] == "object") {
+        for (var elemts in Voiture.motorisation) {
             d("propriétés : " + elemts + " valeur : " + Voiture.motorisation[elemts]);
         }
     }
@@ -574,25 +574,25 @@ for(var elements in Voiture){
 
 // d(Joueur.force + ' ' + Joueur.experience + ' ' + Joueur.race);
 
-function Animal(nom,espece,categorie,age){
+function Animal(nom, espece, categorie, age) {
     this.nom = nom,
-    this.espece = espece,
-    this.categorie = categorie,
-    this.age = age
+        this.espece = espece,
+        this.categorie = categorie,
+        this.age = age
 }
 
 var lion = new Animal("Simba", "lion", "felin", 10);
-var baleine = new Animal("Mobydick", "baleine", "cetace", 80 );
+var baleine = new Animal("Mobydick", "baleine", "cetace", 80);
 
 d(lion.nom);
 d(baleine.categorie);
 
 //créer une classe Joueur avec experience, force et race. et créer deux joueurs
 
-function Joueur(experience, force, race){
+function Joueur(experience, force, race) {
     this.experience = experience,
-    this.force = force,
-    this.race = race
+        this.force = force,
+        this.race = race
 }
 
 var player1 = new Joueur("expert", 8, "mage");
@@ -602,20 +602,20 @@ d(player1.experience + ' ' + player2.race);
 
 
 
-function Vehicule(marque){
+function Vehicule(marque) {
     this.marque = marque;
 }
 
 var megan = new Vehicule("Renault");
 
-megan.demarrer = function(){
+megan.demarrer = function () {
     d("vroum vroum");
 }
 
 megan.demarrer();
 d(megan.marque);
 
-megan.freiner = function(){
+megan.freiner = function () {
     d("je freine");
 }
 

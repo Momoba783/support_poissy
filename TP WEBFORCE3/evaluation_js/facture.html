@@ -44,7 +44,7 @@
         <div class="Partie_centrale">
             <aside class="droite">
                 <h4>à :</h4><br>
-                <select name="" id="select_clients">
+                <select onselect="Clients" id="select_clients">
                     <option id="selectA">Nouveau client</option>
                     <option id="selectB">Shueisha Inc.</option>
                     <option id="selectC">Editions Tonkam</option>
@@ -52,27 +52,27 @@
                     <option id="selectE">Hakusensha Corp.</option>
                     <option id="selectF">Editions Glénat</option>
                 </select>
-                <br><input type="text" name="nomDelasociete" placeholder="Nom de la société" required id='inputA'>
-                <input type="text" name="nom du client" placeholder="Nom" required id='inputB'>
-                <input type="text" name="Rue" placeholder="Rue" required id='inputC'>
-                <input type="text" name="Code postal" placeholder="Code postal, ville" required id='inputD'>
-                <input type="text" name="numéro de téléphone" placeholder="Numéro de téléphone" required id='inputE'>
+                <br><input type="text" name="nomDelasociete" placeholder="Nom de la société"  id='inputA'>
+                <input type="text" name="nom du client" placeholder="Nom"  id='inputB'>
+                <input type="text" name="Rue" placeholder="Rue"  id='inputC'>
+                <input type="text" name="Code postal" placeholder="Code postal, ville"  id='inputD'>
+                <input type="text" name="numéro de téléphone" placeholder="Numéro de téléphone"  id='inputE'>
             </aside>
             <aside class="gauche">
                 <h4>expédier à :</h4><br>
-                <select name="" id="select_clientsb">
+                <select  id="select_clientsb">
                     <option id="selectG">Nouveau client</option>
-                    <option id="selectH">Shueisha Inc.</option>
-                    <option id="selectI">Editions Tonkam</option>
-                    <option id="selectJ">Soleil Manga</option>
-                    <option id="selectK">Hakusensha Corp.</option>
-                    <option id="selectL">Editions Glénat</option>
+                    <option id="selectH">Pika Editions</option>
+                    <option id="selectI">Kodansha</option>
+                    <option id="selectJ">Kana</option>
+                    <option id="selectK">Les Humanoïdes associés</option>
+                    <option id="selectL">Kazé Manga</option>
                 </select>
-                <br><input type="text" name="nomDelasociete" placeholder="Nom de la société" required id='inputF'>
-                <input type="text" name="nom du client" placeholder="Nom" required id='inputG'>
-                <input type="text" name="Rue" placeholder="Rue" required id='inputH'>
-                <input type="text" name="Code postal" placeholder="Code postal, ville" required id='inputI'>
-                <input type="text" name="numéro de téléphone" placeholder="Numéro de téléphone" required id='inputJ'>
+                <br><input type="text" name="nomDelasociete" placeholder="Nom de la société"  id='inputF'>
+                <input type="text" name="nom du client" placeholder="Nom"  id='inputG'>
+                <input type="text" name="Rue" placeholder="Rue"  id='inputH'>
+                <input type="text" name="Code postal" placeholder="Code postal, ville"  id='inputI'>
+                <input type="text" name="numéro de téléphone" placeholder="Numéro de téléphone"  id='inputJ'>
                 <div class="clear"></div>
             </aside>
         </div>
@@ -84,138 +84,138 @@
             <!-- En-tête du tableau-->
             <thead>
                 <tr>
-                    <th>
+                    <th class="codeProduit">
                         <h4>Code Produit</h4>
                     </th>
-                    <th>
+                    <th class="libelleProduit">
                         <h4>Libellé produit</h4>
                     </th>
-                    <th>
+                    <th class="prixProduit">
                         <h4>Prix - Unitaire en euros</h4>
                     </th>
-                    <th>
+                    <th class="quantiteProduit">
                         <h4>Quantité commandé</h4>
                     </th>
-                    <th>
+                    <th class="montantProduit">
                         <h4>Montant en euros</h4>
                     </th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><select>
-                            <option value=""></option>
-                            <option value="m1">
+                    <td><select id="selectCodeA">
+                            <option></option>
+                            <option id="codeProduitA">
                                 123456789101OP
                             </option>
-                            <option value="m2">
+                            <option id="codeProduitB">
                                 234567891011DB
                             </option>
-                            <option value="m3">
+                            <option id="codeProduitC">
                                 345678910111FMA
                             </option>
-                            <option value="m4">
+                            <option id="codeProduitD">
                                 456789101112N
                             </option>
-                            <option value="m5">
+                            <option id="codeProduitE">
                                 567891011121GTO
                             </option>
                         </select></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
-                    <td></td>
+                    <td id="libelleA"></td>
+                    <td id='prixA'></td>
+                    <td><input id="quantiteA"  placeholder="0" ></td>
+                    <td id="montantA"></td>
                 </tr>
                 <tr>
-                    <td><select>
-                            <option value=""></option>
-                            <option value="m1">
+                    <td><select id="selectCodeB">
+                            <option></option>
+                            <option id="codeProduitF">
                                 123456789101OP
                             </option>
-                            <option value="m2">
+                            <option id="codeProduitG">
                                 234567891011DB
                             </option>
-                            <option value="m3">
+                            <option id="codeProduitH">
                                 345678910111FMA
                             </option>
-                            <option value="m4">
+                            <option id="codeProduitI">
                                 456789101112N
                             </option>
-                            <option value="m5">
+                            <option id="codeProduitJ">
                                 567891011121GTO
                             </option>
                         </select></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
-                    <td></td>
+                    <td id="libelleB"></td>
+                    <td id='prixB'></td>
+                    <td><input id="quantiteB" name="quantiteB" placeholder="0" ></td>
+                    <td id="montantB"></td>
                 </tr>
                 <tr>
-                    <td><select>
-                            <option value=""></option>
-                            <option value="m1">
+                    <td><select id="selectCodeC">
+                            <option></option>
+                            <option id="codeProduitK">
                                 123456789101OP
                             </option>
-                            <option value="m2">
+                            <option id="codeProduitL">
                                 234567891011DB
                             </option>
-                            <option value="m3">
+                            <option id="codeProduitM">
                                 345678910111FMA
                             </option>
-                            <option value="m4">
+                            <option id="codeProduitN">
                                 456789101112N
                             </option>
-                            <option value="m5">
+                            <option id="codeProduitO">
                                 567891011121GTO
                             </option>
                         </select></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
-                    <td></td>
+                    <td id="libelleC"></td>
+                    <td id='prixC'></td>
+                    <td><input id="quantiteC" name="quantiteC" placeholder="0"></td>
+                    <td id="montantC"></td>
                 </tr>
                 <tr>
-                    <td><select>
-                            <option value=""></option>
-                            <option value="m1">
+                    <td><select id="selectCodeD">
+                            <option ></option>
+                            <option id="codeProduitP">
                                 123456789101OP
                             </option>
-                            <option value="m2">
+                            <option id="codeProduitQ">
                                 234567891011DB
                             </option>
-                            <option value="m3">
+                            <option id="codeProduitR">
                                 345678910111FMA
                             </option>
-                            <option value="m4">
+                            <option id="codeProduitS">
                                 456789101112N
                             </option>
-                            <option value="m5">
+                            <option id="codeProduitT">
                                 567891011121GTO
                             </option>
                         </select></td>
-                    <td></td>
-                    <td></td>
-                    <td><input type="text" id="quantite" name="quantite" placeholder="0" pattern="[0-9]{10}"></td>
-                    <td></td>
+                    <td id="libelleD"></td>
+                    <td id='prixD'></td>
+                    <td><input id="quantiteD" name="quantite" placeholder="0"></td>
+                    <td id="montantD"></td>
                 </tr>
             </tbody>
         </table>
         <table class="total">
             <tr>
                 <td class="montant">SOUS-TOTAL&nbsp;</td>
-                <td class="case"></td>
+                <td class="case" id="sousTotal"></td>
             </tr>
             <tr>
                 <td class="montant">T.V.A. 20,00%&nbsp;</td>
-                <td class="case"></td>
+                <td class="case" id="tva"></td>
             </tr>
             <tr>
-                <td class="montant">MANUTENTION&nbsp;</td>
-                <td class="case"></td>
+                <td class="montant">PORT & MANUTENTION&nbsp;</td>
+                <td class="case" id="manutention"></td>
             </tr>
             <tr>
                 <td class="montant">TOTAL DU (TOTAL TTC)&nbsp;</td>
-                <td class="case"></td>
+                <td class="case" id="totalTTC"></td>
             </tr>
         </table>
         <footer>
