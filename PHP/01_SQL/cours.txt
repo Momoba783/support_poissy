@@ -1,0 +1,13 @@
+Exemple formulaire :
+HTML -> creer les éléments (input etc.)
+CSS -> Mise en forme (style)
+PHP -> permet d'associer une action supplémentaire qui permet d'exploiter ses informations.
+
+SITE STATIQUE -> un site statique est généralement réalisé avec les langagaes HTML et CSS. La mise à jour du contenu(image, texte, etc.) vont nécessiter une intervention dans le code
+
+SITE DYNAMIQUE -> Les informations proviennent d'une base de données, la mise à jour du contenu est realisée automatiquement grace a des requetes envoyées au serveur.
+Nous pouvons dire qu'un site dynamique est composé de 2 sites: 
+1 partie FRONT (pour l'affichage du site normal) destinée au grand public.
+1 partie BACK protégé par authentification et destiné a la mise à jour du contenu par un admin.
+
+ 

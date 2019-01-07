@@ -1,0 +1,21 @@
+les erreurs courantes
+
+Parse error :
+
+- il manque un point-virgule
+- il manqueun guillement, une quote, ou une parenthèse
+- un probleme de concaténation
+- une accolade mal fermée
+
+undefined Fonction :
+
+La fonction que vous avez essayé d'appeler n'existe pas.
+
+- soit la fonction n'existe vraiment pas.
+- Soit une faute de frappe.
+
+Wrong Parameter count :
+
+- Vous avez oublié des paramètres pour la fonction. Exemple :
+- function appeler (param1, param2, param3);
+appeler (param1, param2, param3);
