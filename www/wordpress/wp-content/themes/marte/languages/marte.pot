@@ -1,0 +1,459 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Marte 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-10 20:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:62
+msgid " "
+msgstr ""
+
+#. 1: list of categories.
+#. 1: list of tags.
+#: inc/template-tags.php:65 inc/template-tags.php:72
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: functions.php:127
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/customizer.php:429
+msgid "Address"
+msgstr ""
+
+#: footer.php:64
+msgid "All rights reserved."
+msgstr ""
+
+#: inc/customizer.php:49
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer.php:514
+msgid "City"
+msgstr ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/customizer.php:448
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/customizer.php:393
+msgid "Contact Settings"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:41
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: inc/customizer.php:191
+msgid ""
+"Do you want to change the title of the Portfolio page? And even include up "
+"to 30 items? Get the Premium theme."
+msgstr ""
+
+#: inc/customizer.php:321
+msgid ""
+"Do you want to change the title of the Team page? And even include up to 30 "
+"items? Get the Premium theme."
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:99 template-parts/content-page.php:37
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/customizer.php:475
+msgid "Enter your adress."
+msgstr ""
+
+#: inc/customizer.php:515
+msgid "Enter your city."
+msgstr ""
+
+#: inc/customizer.php:569
+msgid "Enter your facebook url."
+msgstr ""
+
+#: inc/customizer.php:595
+msgid "Enter your gplus url."
+msgstr ""
+
+#: inc/customizer.php:582
+msgid "Enter your instagram url."
+msgstr ""
+
+#: inc/customizer.php:608
+msgid "Enter your linkedin url."
+msgstr ""
+
+#: inc/customizer.php:501
+msgid "Enter your neighborhood."
+msgstr ""
+
+#: inc/customizer.php:449
+msgid ""
+"Enter your Shortcode. Example: [contact-form-7 id=\"106\" title=\"form1\"]"
+msgstr ""
+
+#: inc/customizer.php:528
+msgid "Enter your state."
+msgstr ""
+
+#: inc/customizer.php:462
+msgid "Enter your telephone."
+msgstr ""
+
+#: inc/customizer.php:621
+msgid "Enter your tumblr url."
+msgstr ""
+
+#: inc/customizer.php:647
+msgid "Enter your twitter url."
+msgstr ""
+
+#: inc/customizer.php:634
+msgid "Enter your youtube url."
+msgstr ""
+
+#: inc/customizer.php:488
+msgid "Enter your zip code."
+msgstr ""
+
+#: inc/customizer.php:568
+msgid "Facebook"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "General Settings"
+msgstr ""
+
+#: inc/customizer.php:594
+msgid "Gplus"
+msgstr ""
+
+#: inc/customizer.php:126
+msgid "Header Settings"
+msgstr ""
+
+#: inc/customizer.php:118
+msgid "Home/Front Page Settings"
+msgstr ""
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "http://marte.miguelsantiago.com.br/"
+msgstr ""
+
+#: inc/customizer.php:581
+msgid "Instragram"
+msgstr ""
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:82
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/customizer.php:607
+msgid "Linkedin"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:69
+msgctxt "list item separator"
+msgid " "
+msgstr ""
+
+#. Name of the theme
+msgid "Marte 3.0"
+msgstr ""
+
+#. Name of the template
+msgid "Marte 3.0 - Blog"
+msgstr ""
+
+#. Name of the template
+msgid "Marte 3.0 - Contact"
+msgstr ""
+
+#. Name of the template
+msgid "Marte 3.0 - Home"
+msgstr ""
+
+#. Author of the theme
+msgid "Miguel Santiago"
+msgstr ""
+
+#: 404.php:31
+msgid "Most Used Categories"
+msgstr ""
+
+#: inc/customizer.php:500
+msgid "Neighborhood"
+msgstr ""
+
+#: inc/marte-variables.php:38
+msgid "No"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: template-parts/content-page.php:24 template-parts/content.php:52
+msgid "Pages:"
+msgstr ""
+
+#: inc/customizer.php:175
+msgid "Portfolio"
+msgstr ""
+
+#: inc/customizer.php:231
+msgid "Portfólio 1"
+msgstr ""
+
+#: inc/customizer.php:252
+msgid "Portfólio 2"
+msgstr ""
+
+#: inc/customizer.php:272
+msgid "Portfólio 3"
+msgstr ""
+
+#: inc/customizer.php:292
+msgid "Portfólio 4"
+msgstr ""
+
+#. %s: post author.
+#: inc/template-tags.php:45
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/customizer.php:61
+msgid "Premium / Support"
+msgstr ""
+
+#: functions.php:60
+msgid "Primary"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#. %s: search query.
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/marte-variables.php:36
+msgid "Select"
+msgstr ""
+
+#: inc/customizer.php:381
+msgid "Select a post/page you want to show as team three"
+msgstr ""
+
+#: inc/customizer.php:361
+msgid "Select a post/page you want to show as team two"
+msgstr ""
+
+#: inc/customizer.php:430
+msgid "Select a post/page you want to show in Address section"
+msgstr ""
+
+#: inc/customizer.php:162
+msgid "Select a post/page you want to show in header"
+msgstr ""
+
+#: inc/customizer.php:211
+msgid "Select a post/page you want to show in portfolio section"
+msgstr ""
+
+#: inc/customizer.php:232 inc/customizer.php:253 inc/customizer.php:273
+#: inc/customizer.php:293
+msgid "Select a post/page you want to show in Portfólio section"
+msgstr ""
+
+#: inc/customizer.php:341
+msgid "Select a post/page you want to show in team section"
+msgstr ""
+
+#: inc/customizer.php:41
+msgid "Select frontpage type"
+msgstr ""
+
+#: inc/customizer.php:161 inc/customizer.php:210
+msgid "Select post"
+msgstr ""
+
+#: inc/customizer.php:141
+msgid "Show header?"
+msgstr ""
+
+#: inc/customizer.php:75 inc/customizer.php:104
+msgid "Show headerr?"
+msgstr ""
+
+#: inc/customizer.php:190
+msgid "Show Portfolio?"
+msgstr ""
+
+#: inc/customizer.php:408
+msgid "Show quote?"
+msgstr ""
+
+#: inc/customizer.php:550
+msgid "Show social?"
+msgstr ""
+
+#: inc/customizer.php:320
+msgid "Show Team?"
+msgstr ""
+
+#: functions.php:125
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:28
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:535
+msgid "Social Settings"
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/customizer.php:527
+msgid "State"
+msgstr ""
+
+#: inc/customizer.php:474
+msgid "Street"
+msgstr ""
+
+#: inc/customizer.php:340
+msgid "Team one"
+msgstr ""
+
+#: inc/customizer.php:305
+msgid "Team Settings"
+msgstr ""
+
+#: inc/customizer.php:380
+msgid "Team three"
+msgstr ""
+
+#: inc/customizer.php:360
+msgid "Team two"
+msgstr ""
+
+#: inc/customizer.php:461
+msgid "Telephone"
+msgstr ""
+
+#: inc/customizer.php:89
+msgid "Theme Usage Guide"
+msgstr ""
+
+#. %1$s: smiley
+#: 404.php:47
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: inc/customizer.php:620
+msgid "Tumblr"
+msgstr ""
+
+#: inc/customizer.php:646
+msgid "Twitter"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Use the best of your creativity. With the responsive theme you can have "
+"endless forms of creation. / Use o melhor da sua criatividade. Com o tema "
+"responsivo você pode tem infinitas formas de criação."
+msgstr ""
+
+#: inc/marte-variables.php:37
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer.php:633
+msgid "Youtube"
+msgstr ""
+
+#: inc/customizer.php:487
+msgid "Zip code"
+msgstr ""

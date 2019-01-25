@@ -1,0 +1,145 @@
+/*
+Theme Name: mon theme perso
+Author: Ba Mohamed
+Description: Voici mon thème
+Version: 1.2
+Text Domain: monthemeperso
+*/
+
+*{
+    list-style: none;
+}
+
+.haut-gauche{
+    /* background-color: rgb(200, 113, 200); */
+    min-height:80px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.haut-droite{
+    /* background-color: rgb(77, 47, 77); */
+    min-height:80px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.entete{
+    /* background-color: rgb(241, 165, 241); */
+    /* min-height: 50px; */
+}
+
+.bas-gauche{
+     min-height:80px;
+
+}
+
+.bas-droite{
+    background-color: rgb(200, 113, 200);
+    
+}
+
+section{
+    min-height:500px;
+}
+
+.my-logo{
+    width:150px;
+    height:150px;
+}
+
+.my-logo img{
+    height:150px;
+}
+
+.my-slogan{
+    font-size:40px !important;
+}
+
+.my-slogan{
+    text-decoration: none;
+}
+
+.my-number p > a{
+    font-size:30px;
+
+}
+
+.my-number p > a:hover{
+    text-decoration:none;
+}
+
+.my-number i{
+    margin-right:10px;
+    font-size:30px;
+}
+
+.my-email p > a{
+    font-size:30px;
+}
+
+.my-email p > a:hover{
+    text-decoration:none;
+}
+
+.my-email i{
+    margin-right:10px;
+    font-size:30px;
+}
+
+.realisations > .col-md-4{
+    margin-bottom:30px;
+}
+
+.lead{
+    font-size:22px!important;
+    margin-bottom:0;
+}
+
+.lead:last-of-type{
+    margin-bottom:20px;
+}
+
+.competences{
+    margin:20px 0;
+}
+
+#menu-main-navigation{
+    display:flex;
+    margin:0;
+    padding:0;
+    width:300px;
+    justify-content: space-around;
+}
+
+.menu-header{
+    display:flex;
+    align-items:center;
+}
+
+#menu-main-navigation li a{
+    font-size:18px;
+}
+
+#menu-footer-navigation{
+    display:flex;
+    justify-content: space-around;
+}
+
+#menu-footer-navigation-container{
+    margin-top:40px;
+}
+
+#menu-footer-navigation-container a{
+    font-size:20px;
+}
+
+
+
+
+
+
+
