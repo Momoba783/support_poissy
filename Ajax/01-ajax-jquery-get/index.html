@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX JQUERY GET</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="display-4 text-center">AJAX JQUERY GET</h1>
+
+        <div id="demo">AJAX GET</div>
+
+        <button type="button" class="btn btn-success" id="action">Charger le fichier TXT</button>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+        <script>
+            /*
+                AJAX (asynchronus javascript and XML) est une association de langage permettant d'envoyer des requêtes HTTP
+                Il y a toujours deux requêtes : aller / retour
+                C'est grâce à l'objet javascript XMLHttpRequest() qu'il est possible d'envoyer des requêtes HTTP.
+            */
+        $(document).ready(function(){
+            $("#action").click(function(event){
+                // alert('Tout roule');
+                // ajax() est une méthode (fonction) jquery permettant d'envoyer des requêtes HTTP avec la méthode GET
+                $.ajax({
+                    url: "ajax_info.txt", //URL de destination
+                    dataType : "text", //Type de données
+                    //en cas de succes de requêtes, la réponse de la requête est stockée dans 'data'
+                    //la méthode "ajax()" se charge de tout faire,la réponse de la requête est parsée au format JSON, sinon on ne pourrait pas véhiculer des données en HTTP
+                    success : function(data){ //requête retour, la réponse de la reqête est dans le "data"
+                        $("#demo").html(data);//on sélectionnne la div id"demo" dans laquelle on accroche le resultat de la requête AJAX contenue dans "data"
+
+                    }
+                });
+            });
+        });
+        </script>
+
+</body>
+
+</html>
