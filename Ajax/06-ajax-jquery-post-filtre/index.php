@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AJAX FILTRE JQUERY</title>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <script src="ajax6.js"></script>
 </head>
 <body>
 
@@ -80,7 +82,7 @@
 
                 <div class="form-row">
                     <div class="col-md-6">
-                        <select class="form-control d-block m-auto" id="date1">
+                        <select class="form-control d-block m-auto" type="date" id="date1">
                         <?php
                             $result = $bdd->query("SELECT date_embauche FROM employes");
 
@@ -91,7 +93,7 @@
                         </select>
                     </div>
                     <div class=" col-md-6">
-                        <select class="form-control d-block m-auto" id="date2">
+                        <select class="form-control d-block m-auto" type="date" id="date2">
                         <?php
                             $result = $bdd->query("SELECT date_embauche FROM employes");
 
@@ -118,7 +120,7 @@
 
             </div>
             <br>
-            <button type="submit" id="filtrer" class="col-md-12 btn btn-success d-block m-auto">Filtrer</button>
+            <button type="submit" id="filtrer" class="col-md-12 btn btn-dark d-block m-auto">Filtrer</button>
 
             <div id="resultat"></div>
 
@@ -126,8 +128,7 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="ajax6.js"></script>
+    
     
 </body>
 </html>

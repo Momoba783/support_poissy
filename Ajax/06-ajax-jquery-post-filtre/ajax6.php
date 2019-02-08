@@ -5,7 +5,13 @@ extract($_POST);
 $q="SELECT * FROM employes WHERE service = '$service' AND sexe = '$sexe' AND salaire BETWEEN '$salaireUn' AND '$salaireDeux' AND date_embauche BETWEEN '$dateUn' AND '$dateDeux'";
 $resultat = $bdd->query($q);
 
-$tab['resultat'] = '<br><br><table class="table table-striped table-success">
+if($resultat->rowCount()<=0){
+
+    $tab['resultat'] = '<div class="col-md-6 offset-md-3 alert alert-danger">Aucun employé n\'a été trouvé</div>';
+}else{
+
+
+$tab['resultat'] = '<br><br><table class="table table-striped table-dark">
 <thead>
 <tr>';
 
@@ -25,7 +31,7 @@ while($ligne = $resultat->fetch(PDO::FETCH_ASSOC)){
 }
 
 $tab['resultat'] .= '</tbody></table>';
-
+};
 echo json_encode($tab);
 
 ?>
