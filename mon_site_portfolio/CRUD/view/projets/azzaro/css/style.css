@@ -1,0 +1,188 @@
+Body{
+    height: 1150px;
+    background-image: linear-gradient(rgb(206, 206, 206), white);
+}
+
+.container{
+    width:1000px;
+    height:80%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 1px 1px 1px gray;
+}
+
+/*Debut du header*/
+.header{
+    margin-left: 8px;
+}
+
+.headergauche{
+    float: left;
+    line-height: 0.1em;
+    position: relative;
+    left: left;
+    top: -10px;
+    vertical-align: text-top;
+    width: 33.3%;
+}
+
+.h1{
+    font-size: 45px;
+}
+
+.rose{
+    color: rgb(224, 102, 224);
+    position: relative;
+    left: 50px;
+    font-size: 14px;
+}
+ 
+.headercentre{
+    line-height: 1px;
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 25px;
+}
+
+.h2{
+    color: #53D2F6;
+    font-weight: 100;
+}
+
+.gris{
+    color: darkgrey;
+    font-size: 0.8em;
+}
+
+.headerdroite{
+    float: right;
+    width: 150px;
+    height: 130px;
+    background-color: #53D2F6;
+    text-align: center;
+    line-height: 0.1em;
+    width: 33.3%
+}
+.hr{
+    background-color: white;
+    color: white;
+    line-height: 0.3em;
+}
+
+.h6, .blanc{
+    color:white;
+    line-height: 0.1em;
+}
+
+/*Fin du header*/
+
+/*Debut nav*/
+
+.nav{
+    background-color: #53D2F6;
+    width: 1000px;
+    height: 35px;
+    text-decoration: none;
+}
+
+.liens{
+    text-decoration: none;
+    color: white;
+    margin-left: 85px;
+    text-align: center;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+
+/*fin de la nav*/
+
+/*1ere section*/
+
+.paiement{
+    width: 20%;
+    height: 150px;
+    float: left;
+    margin-left: 10px;
+    border-right: 1px solid gray;
+}
+
+.nous{
+    width: 57%;
+    height: 150px;
+    display: inline-block;
+    margin-left: 10px;
+    border-right: 1px solid gray;
+}
+
+.services{
+    width:20%;
+    float: right;
+}
+
+
+/*2eme section*/
+
+.bonplan{
+    width: 30%;
+    float: left;
+    border: 1px solid gray;
+    border-radius: 4%;
+    box-shadow: 3px 3px 3px gray;
+    margin-left: 15px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.coupdecoeur{
+    width: 30%;
+    height: 205px;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4%;
+    box-shadow: 3px 3px 3px gray;
+    margin-left: 17px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.objectif{
+    width: 30%;
+    float: right;
+    border: 1px solid gray;
+    border-radius: 4%;
+    box-shadow: 3px 3px 3px gray;
+    margin-right: 15px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.liensv{
+    color: #53D2F6;
+}
+
+/*Debut du footer*/
+
+.footer{
+    height: 50px;
+    background-color: #53D2F6;
+}
+
+.liensf{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    text-align: center;
+    height: 3em;
+    line-height: 3em;
+}
+
+/*fin du footer*/
+
+.clear{
+    clear: both;
+}

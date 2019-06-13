@@ -1,0 +1,157 @@
+body{
+    width:100%;
+    margin:auto;
+    background-image: url(../img/background.png);
+    background-repeat:repeat;
+}
+
+header{
+    height:50px;
+    background-color:#C55394;
+}
+
+#logo {
+    float: left;
+    font-family: 'Courgette', cursive;
+    font-size: 1.3em;
+    margin-left: 20px;
+    padding-top: 15px;
+    color:#fff;
+}
+
+nav{
+    float:right;
+    text-align : right;    
+}
+
+nav ul li{
+    display:inline-block;
+    padding-right: 20px;
+    font-family:Arial, sans-serif;
+    padding-top: 15px;
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+nav ul li a:hover{
+    background-color: #EB43A3
+}
+
+.clear {
+    clear: both;
+}
+
+#titre{
+    font-size:2em;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    color:#C55394;
+    transform: translate(0,115px);  
+}
+
+.rainbow{
+    width:100%;
+    margin:auto;
+    height:140px;
+    background: url(../img/rainbow.png) no-repeat;
+    transform: translate(693px,0);
+    
+}
+
+.bloc{
+    width:70%;
+    margin:auto;
+    background-color:#fff;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.6);
+    border-radius:5px;
+    padding:30px;
+    margin-bottom:40px;
+}
+
+#un, #deux, #trois{
+    font-family: 'Courgette', cursive;
+    font-size:1.3em;
+    color:#EB43A3;  
+    margin-top:30px;
+    margin-bottom:40px;
+}
+
+p{
+    font-family: Arial, sans-serif;
+}
+
+.images{
+    margin-top:50px;
+}
+
+.petit{
+    width :300px;
+    float:left;
+    margin:14px;
+    position:relative;
+}
+
+
+.opacite{
+    background-color: rgba(0,0,0,0.7);
+    height:40px;
+    width:100%;
+    position:absolute;
+    bottom:2px;
+    left:0px;
+    
+}
+
+.opacite p{
+    text-align: center;
+    color:#fff;
+    font-family: Arial, sans-serif;
+    padding-top:10px;
+}
+
+iframe{
+    float:left;
+}
+
+.droite{
+    float:left;
+    margin-left:30px;
+}
+
+.right{
+    font-family: 'Courgette', cursive;
+    color:#EB43A3;
+    margin-top:30px;
+}
+
+#bouton{
+    border-radius:3px;
+    background-color: #EB43A3;
+    color:#fff;
+    width:90px;
+    height:30px;
+}
+
+footer{
+    height:20px;
+    background-color: #E577B5;
+}
+
+.copyright{
+    text-align: right;
+    padding-top:15px;
+    color:#fff;
+    font-family: Arial, sans-serif
+}
+
+
+
+
+
+
+
+

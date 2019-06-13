@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="facture js javascript">
+    <meta name="author" content="Sonia Bougamha, Mohamed Ba, Mathieu Berrah">
+    <meta name="description" content="Facture en javascript">
+    <link rel="stylesheet" href="css/style.css"><!-- CSS-->
+    <title>Evaluation Web Force 3: JavaScript</title>
+</head>
+<body>
+    <section id="conteneur">
+        <header>
+            <!-- TITRE PRINCIPAL DE LA PAGE -->
+            <h1>FACTURE</h1>
+            <!-- Input : Société émettrice -->
+            <section class="societe">
+                <input type="text" placeholder="Nom de la société émettrice" class="nomSociete">
+                <input type="text" placeholder="Adresse de la société" class="adresseSociete">
+                <input type="text" placeholder="Entrez un numéro de téléphone valide" class="telSociete">
+                <input type="text" placeholder="Adresse de messagerie" class="mailSociete">
+            </section>
+            <section class="factureDate">
+                <div class="facture">
+                    <p>N° DE FACTURE</p>
+                    <input type="text" placeholder="01" class="numeroFacture">
+                </div>
+                <!-- Select Option date : Jour, Mois, Année -->
+                <div id="selectDate">
+                    <p>DATE</p>
+                    <select id="selectJour">
+                    </select>
+                    <select id="selectMois">
+                    </select>
+                    <select id="selectAnnee">
+                    </select>
+                </div>
+            </section>
+        </header>
+        <div class="clear"></div>
+        <!--PARTIE CENTRALE-->
+        <div class="Partie_centrale">
+            <aside class="droite">
+                <h4>à :</h4><br>
+                <select onselect="Clients" id="select_clients">
+                    <option id="selectA">Nouveau client</option>
+                    <option id="selectB">Shueisha Inc.</option>
+                    <option id="selectC">Editions Tonkam</option>
+                    <option id="selectD">Soleil Manga</option>
+                    <option id="selectE">Hakusensha Corp.</option>
+                    <option id="selectF">Editions Glénat</option>
+                </select>
+                <br><input type="text" name="nomDelasociete" placeholder="Nom de la société"  id='inputA'>
+                <input type="text" name="nom du client" placeholder="Nom"  id='inputB'>
+                <input type="text" name="Rue" placeholder="Rue"  id='inputC'>
+                <input type="text" name="Code postal" placeholder="Code postal, ville"  id='inputD'>
+                <input type="text" name="numéro de téléphone" placeholder="Numéro de téléphone"  id='inputE'>
+            </aside>
+            <aside class="gauche">
+                <h4>expédier à :</h4><br>
+                <select  id="select_clientsb">
+                    <option id="selectG">Nouveau client</option>
+                    <option id="selectH">Pika Editions</option>
+                    <option id="selectI">Kodansha</option>
+                    <option id="selectJ">Kana</option>
+                    <option id="selectK">Les Humanoïdes associés</option>
+                    <option id="selectL">Kazé Manga</option>
+                </select>
+                <br><input type="text" name="nomDelasociete" placeholder="Nom de la société"  id='inputF'>
+                <input type="text" name="nom du client" placeholder="Nom"  id='inputG'>
+                <input type="text" name="Rue" placeholder="Rue"  id='inputH'>
+                <input type="text" name="Code postal" placeholder="Code postal, ville"  id='inputI'>
+                <input type="text" name="numéro de téléphone" placeholder="Numéro de téléphone"  id='inputJ'>
+                <div class="clear"></div>
+            </aside>
+        </div>
+        <table class="details">
+            <!-- Titre hors de l'encadré-->
+            <caption>
+                <h2>Détails des produits facturés</h2>
+            </caption>
+            <!-- En-tête du tableau-->
+            <thead>
+                <tr>
+                    <th class="codeProduit">
+                        <h4>Code Produit</h4>
+                    </th>
+                    <th class="libelleProduit">
+                        <h4>Libellé produit</h4>
+                    </th>
+                    <th class="prixProduit">
+                        <h4>Prix - Unitaire en euros</h4>
+                    </th>
+                    <th class="quantiteProduit">
+                        <h4>Quantité commandé</h4>
+                    </th>
+                    <th class="montantProduit">
+                        <h4>Montant en euros</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><select id="selectCodeA">
+                            <option></option>
+                            <option id="codeProduitA">
+                                123456789101OP
+                            </option>
+                            <option id="codeProduitB">
+                                234567891011DB
+                            </option>
+                            <option id="codeProduitC">
+                                345678910111FMA
+                            </option>
+                            <option id="codeProduitD">
+                                456789101112N
+                            </option>
+                            <option id="codeProduitE">
+                                567891011121GTO
+                            </option>
+                        </select></td>
+                    <td id="libelleA"></td>
+                    <td id='prixA'></td>
+                    <td><input id="quantiteA"  placeholder="0" ></td>
+                    <td id="montantA"></td>
+                </tr>
+                <tr>
+                    <td><select id="selectCodeB">
+                            <option></option>
+                            <option id="codeProduitF">
+                                123456789101OP
+                            </option>
+                            <option id="codeProduitG">
+                                234567891011DB
+                            </option>
+                            <option id="codeProduitH">
+                                345678910111FMA
+                            </option>
+                            <option id="codeProduitI">
+                                456789101112N
+                            </option>
+                            <option id="codeProduitJ">
+                                567891011121GTO
+                            </option>
+                        </select></td>
+                    <td id="libelleB"></td>
+                    <td id='prixB'></td>
+                    <td><input id="quantiteB" name="quantiteB" placeholder="0" ></td>
+                    <td id="montantB"></td>
+                </tr>
+                <tr>
+                    <td><select id="selectCodeC">
+                            <option></option>
+                            <option id="codeProduitK">
+                                123456789101OP
+                            </option>
+                            <option id="codeProduitL">
+                                234567891011DB
+                            </option>
+                            <option id="codeProduitM">
+                                345678910111FMA
+                            </option>
+                            <option id="codeProduitN">
+                                456789101112N
+                            </option>
+                            <option id="codeProduitO">
+                                567891011121GTO
+                            </option>
+                        </select></td>
+                    <td id="libelleC"></td>
+                    <td id='prixC'></td>
+                    <td><input id="quantiteC" name="quantiteC" placeholder="0"></td>
+                    <td id="montantC"></td>
+                </tr>
+                <tr>
+                    <td><select id="selectCodeD">
+                            <option ></option>
+                            <option id="codeProduitP">
+                                123456789101OP
+                            </option>
+                            <option id="codeProduitQ">
+                                234567891011DB
+                            </option>
+                            <option id="codeProduitR">
+                                345678910111FMA
+                            </option>
+                            <option id="codeProduitS">
+                                456789101112N
+                            </option>
+                            <option id="codeProduitT">
+                                567891011121GTO
+                            </option>
+                        </select></td>
+                    <td id="libelleD"></td>
+                    <td id='prixD'></td>
+                    <td><input id="quantiteD" name="quantite" placeholder="0"></td>
+                    <td id="montantD"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="total">
+            <tr>
+                <td class="montant">SOUS-TOTAL&nbsp;</td>
+                <td class="case" id="sousTotal"></td>
+            </tr>
+            <tr>
+                <td class="montant">T.V.A. 20,00%&nbsp;</td>
+                <td class="case" id="tva"></td>
+            </tr>
+            <tr>
+                <td class="montant">PORT & MANUTENTION&nbsp;</td>
+                <td class="case" id="manutention"></td>
+            </tr>
+            <tr>
+                <td class="montant">TOTAL DU (TOTAL TTC)&nbsp;</td>
+                <td class="case" id="totalTTC"></td>
+            </tr>
+        </table>
+        <footer>
+            <p id="ghost">
+                N.B. Votre facture a dépassé 1000€, vous avez obtenu pour votre prochaine facture une remise de : <span
+                    id="remise"></span>
+                représentant 5% de votre commande ci-dessus.
+            </p>
+            <!-- Informations de contact -->
+            <p>Veuillez rédiger tous les chèques à l'ordre de </p><span id="nomfacturant">Nom de la société</span><br>
+            <p> Pour toute question concernant cette facture, veuillez contacter : DUPONT au </p><br><span id="telfacturant">Numéro
+                de téléphone</span>
+            <p> ou à l'adresse</p><span id="mailfacturant">Adresse Email</span>
+            <br>
+            <br>
+            <p class="txtGras">Nous vous remercions de votre confiance.</p>
+            <!-- Bouton(Imprimer la page) -->
+            <br>
+            <a href="javascript:window.print()"><button>Imprimer cette page</button></a>
+        </footer>
+    </section>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!--Lien vers le fichier JS-->
+</body>
+</html>

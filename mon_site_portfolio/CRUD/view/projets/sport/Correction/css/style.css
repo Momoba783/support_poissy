@@ -1,0 +1,70 @@
+/* Reset css */
+
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+}
+
+body{
+    background-color: black;
+}
+
+/* style header */
+
+#main-header{
+    background-color: #fff;
+    display:flex;
+    justify-content: space-around;
+}
+
+/* style espace personnel */
+
+#espace-personnel{
+    display:flex;
+    justify-content: space-around;
+}
+
+h2{
+    text-align:right;
+}
+
+/* style main navigation */
+
+#main-navigation ul{
+    display:flex;
+}
+
+/* style top section */
+
+.articles-section{
+    display:flex;
+    justify-content: center;
+}
+
+#footer-navigation ul{
+    display:flex;
+}
+
+#services{
+    display: flex;
+}
+
+#reseaux-sociaux{
+    display: flex;
+}
+
+/* style section */
+
+section{
+    width:60%;
+    margin:auto;
+    background-color: #fff;
+}
+
+section header > img{
+    width:100%;
+}
+
+/* style footer */
