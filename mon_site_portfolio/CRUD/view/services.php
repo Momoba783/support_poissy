@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../css/magnific-popup.css">
-
+ 
     <link rel="stylesheet" href="../css/aos.css">
 
     <link rel="stylesheet" href="../css/ionicons.min.css">
@@ -27,15 +27,6 @@
     <link rel="stylesheet" href="../css/flaticon.css">
     <link rel="stylesheet" href="../css/icomoon.css">
     <link rel="stylesheet" href="../css/style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
-    <!-- JQuery Library -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Fancy Box Core JS -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-    <!-- Fancy Box -->
   </head>
   <body>
 
@@ -48,7 +39,7 @@
     <nav id="colorlib-main-nav" role="navigation">
       <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
       <div class="js-fullheight colorlib-table">
-      	<div class="img" style="background-image: url(../images/mohamedbanb.jpg);"></div>
+      	<div class="img" style="background-image: url(../images/moitrainnb.jpg);"></div>
         <div class="colorlib-table-cell js-fullheight">
           <div class="row no-gutters">
             <div class="col-md-12 text-center">
@@ -56,9 +47,9 @@
               <ul>
                 <li><a href="../../index.html"><span><small>01</small>Accueil</span></a></li>
                 <li><a href="about.html"><span><small>02</small>Moi</span></a></li>
-                <li><a href="services.php"><span><small>03</small>Compétences</span></a></li>
+                <li class="active"><a href="services.php"><span><small>03</small>Compétences</span></a></li>
                 <li><a href="portfolio.html"><span><small>04</small>Portfolio</span></a></li>
-                <li class="active"><a href="blog.html"><span><small>05</small>Bonus</span></a></li>
+                <li><a href="blog.html"><span><small>05</small>Bonus</span></a></li>
                 <li><a href="contact.html"><span><small>06</small>Contact</span></a></li>
               </ul>
             </div>
@@ -80,82 +71,59 @@
           </div>
         </div>
       </header>
-  <!-- FIN HEADER -->
+
+      <?php var_dump($donnees)?>
 
       <section class="ftco-section">
         <div class="container mt-5">
-        	<div class="row justify-content-center mb-5 pb-5">
+          <div class="row justify-content-center mb-5 pb-5">
             <div class="col-md-7 text-center heading-section ftco-animate">
-              <span>2017</span>
-              <h2>Happy Friday Night</h2>
-              <br>
-              <p>Affiches et dépliants réalisés pour une soirée <br>pour le restaurant The Place To
+              <span>Ce que je sais faire</span>
+              <h2>Mes compétences</h2>
             </div>
           </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-6">
-              
-              <p>
-                  <a data-fancybox="gallery" href="../images/placeto4.png">
-                <img src="../images/placeto4.png" alt="" class="img-fluid">
-                </a>
-              </p>
-              <br>
-            
-              </div>
-              <div class="col-md-8">
-              
-                <p>
-                    <a data-fancybox="gallery" href="../images/placeto3.png">
-                  <img src="../images/placeto3.png" alt="" class="img-fluid">
-                  </a>
-                </p>
-                <br>
-              
+          <div class="row">
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services p-3 py-4 d-block text-center">
+                <div class="icon mb-3"><?= $donnees["icone"] ?></div>
+                <div class="media-body">
+                  <h3 class="heading">UI/UX Design</h3>
+                  <h3 class="heading">Responsive Design</h3>
+                  <h3 class="heading">Wordpress</h3>
+                  <h3 class="heading">Bootstrap</h3>
+                  <h3 class="heading">Ligne de commande</h3>
                 </div>
-                <div class="col-md-8">
-              
-                  <p>
-                      <a data-fancybox="gallery" href="../images/placeto2.png">
-                    <img src="../images/placeto2.png" alt="" class="img-fluid">
-                      </a>
-                  </p>
-                  <br>
-                
-                  </div>
-                  <div class="col-md-8">
-              
-                    <p>
-                        <a data-fancybox="gallery" href="../images/placeto2bis.PNG">
-                      <img src="../images/placeto2bis.png" alt="" class="img-fluid">
-                      </a>
-                    </p>
-                    <br>
-                  
-                    </div>
-                    <div class="col-md-5">
-              
-                      <p>
-                          <a data-fancybox="gallery" href="../images/placeto1.png">
-                        <img src="../images/placeto1.png" alt="" class="img-fluid">
-                        </a>
-                      </p>
-                      <br>
-                    
-                      </div>
-                        
-              
-
-                      <a href="blog.html"><button type="button"><i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true"></i></button></a>
-              </div>
-
-            </div> <!-- .col-md-8 -->
-
+              </div>      
+            </div>
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services p-3 py-4 d-block text-center">
+                <div class="icon mb-3"><?= $donnees["icone"] ?></div>
+                <div class="media-body">
+                  <h3 class="heading">Photoshop</h3>
+                  <h3 class="heading">Illustrator</h3>
+                  <h3 class="heading">Indesign</h3>
+                  <h3 class="heading">Acrobat</h3>
+                  <h3 class="heading">Quark Xpress</h3>
+                </div>
+              </div>      
+            </div>
+            <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services p-3 py-4 d-block text-center">
+                <div class="icon mb-3"><?= $donnees["icone"] ?></div>
+                <div class="media-body">
+                  <h3 class="heading">HTML/CSS</h3>
+                  <h3 class="heading">Javascript</h3>
+                  <h3 class="heading">JQuery</h3>
+                  <h3 class="heading">PHP</h3>
+                  <h3 class="heading">AJAX</h3>
+                </div>
+              </div>    
+            </div>
           </div>
         </div>
       </section>
       
-      <!-- DEBUT FOOTER -->
+     <!-- DEBUT FOOTER -->
 		 <footer class="ftco-footer ftco-bg-dark ftco-section">
 			<div class="container">
 				<div class="row mb-5 justify-content-center">
@@ -211,7 +179,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="../js/google-map.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/fancy_box.js"></script>
     
   </body>
 </html>

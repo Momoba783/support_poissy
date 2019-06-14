@@ -18,10 +18,8 @@
             ?>
         </div>
     <?php endforeach; ?>
-    <br>
-    <input type="file" name="avatar" id="<?= $value["avatar"]?>">
-    <br>
+   
     <br>
     <br>
-    <input type="submit" class="col-md-12 btn btn-info">
+    <input type="submit" class="col-md-12 btn btn-dark">
 </form>

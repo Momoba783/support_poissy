@@ -24,13 +24,14 @@ class Controller
             throw new Exception($e->getMessage()); // permet d'envoyer un message et d'arreter le script si il y a une erreur dans le bloc try
         }
     }
+
     public function selectAll()
     {
         // echo "Méthode selectAll()";
         // $r = $this->db->selectAll();
         // echo "<pre>" ; print_r($r); echo "</pre>";
         $this->render("layout.php", "donnees.php", array(
-            "title"=>"Toutes les données",
+            "title"=>"Compétences",
             "donnees"=>$this->db->selectAll(),
             "fields"=>$this->db->getFields(),
             "id" => "id" . ucfirst($this->db->table) // affiche idEmploye, cela servira a pointer sur l'indice idEmploye du tableau de données envoyer dans le layout pour les liens voir/modifier/supprimer
@@ -42,7 +43,7 @@ class Controller
         extract($parameters); // permet d'avoir des indices du tableau comme variable
         ob_start(); // commence la temporisation, ob_start() démarrer la temporisation de sortie
         require "view/back/$template";
-        // $content = require "view/$template";
+        // require "view/$services";
         $content = ob_get_clean(); // tout ce qui se trouve dans le template sera stocké dans $content
         // $content = "view/$template";
 
